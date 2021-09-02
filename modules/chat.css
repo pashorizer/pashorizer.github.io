@@ -1,0 +1,40 @@
+.submitsagen, .submitclan, .submitschreien,
+.submitgroup, .submitwhisper, .submitglobalchat {
+	background-image: url(i/button_bg2.jpg);
+	border: 1px solid #777;
+	font-size: 11px;
+	font-weight: bold;
+	height: 17px;
+	margin-left: 2px;
+	margin-right: 2px;
+	padding-bottom: 2px;
+	width: 80px;
+}
+
+.chattext, .submitsagen { color: #000000; }
+.chattextclan, .submitclan { color: #d20000; }
+.chattextscream, .submitschreien { color: #004da7; }
+.chattextgroup, .submitgroup { color: #e36b30; }
+.chattextwhisper, .submitwhisper { color: #006600; }
+.chattextglobal, .submitglobalchat { color: #6e621e; }
+
+.chattextsynergieinspiration { font-style: italic; }
+
+.submitschreien { width: 87px; }
+.submitwhisper { width: 88px; }
+
+.chattext, .chattextclan, .chattextscream, .chattextgroup,
+.chattextwhisper, .chattextglobal, .chattextworldsay,
+.chattextinfo {
+	font-size: 13px;
+}
+
+.chattextworldsay {
+	color: #000;
+	background-color: #c1cef9;
+}
+
+.chattextinfo { font-style: italic; }
+.chattextinfo:before { content: "Bemerkenswert: "; font-weight: bold; color: #a37300; }
+
+.chatpics { visibility: visible; }

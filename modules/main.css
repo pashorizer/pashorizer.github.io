@@ -1,0 +1,72 @@
+td.mainheader {
+	font-size: 35px;
+	background-image: url(i/headerbg.jpg);
+}
+
+table.areadescription {
+	border: 1px solid #ffdaa9;
+	background-color: #fff8ef;
+	width: 100%;
+}
+
+td.areadescription { padding: 0; }
+
+.imageborder {
+	border: 1px solid #c85424;
+	background-color: #c85424;
+	margin-right: 1px;
+	margin-bottom: 1px;
+}
+
+p.maincaption {
+	font-weight: bold;
+	font-size: 30px;
+	padding: 1px;
+	background-image: url(i/headerbg.jpg);
+}
+
+p.maincaption2 {
+	font-weight: bold;
+	font-size: 12px;
+	padding: 1px;
+	background-image: url(i/bluebg.jpg);
+}
+
+p.maindesc1 {
+	padding: 1px;
+	background-color: #ece9e6;
+	border: 1px solid #d6cbc2;
+	border-top: 1px;
+	width: 300px;
+}
+
+p.maindesc2 {
+	border: 1px solid #ffdaa9;
+	background-color: #fff8ef;
+	width: 100%;
+}
+
+p.listplaceitemsrow {
+	padding: 1px;
+	background-color: #ece9e6;
+	border: 1px solid #d6cbc2;
+	border-top: 0;
+}
+
+p.listusersrow {
+	padding: 1px;
+	background-color: #ece9e6;
+	border: 1px solid #d6cbc2;
+	border-top: 0;
+}
+
+p.personlistcaption, p.itemlistcaption, #plantrow {
+	border: 1px solid #a2a09f;
+	font-weight: bold;
+	padding: 2px;
+	padding-left: 5px;
+}
+
+p.personlistcaption { background-image: url(i/buttonblue_bg.jpg); }
+p.itemlistcaption { background-image: url(i/buttonorange_bg.jpg); }
+#plantrow { background-image: url(i/buttongreen_bg.jpg); }

@@ -1,0 +1,33 @@
+/* Auftrags NPCs auf der Karte*/
+
+.framemapbg table td { position: relative; }
+
+	/* Ruward - Onloskelette */
+	#mapx70y105 a:after, #mapx70y108 a:after, #mapx70y108 a:after, #mapx71y105 a:after, #mapx71y107 a:after, #mapx72y106 a:after, #mapx73y105 a:after, #mapx73y106 a:after, #mapx74y104 a:after  { content: "Onlo"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+	
+	/* Lardikia - Blattalisken */	 
+	#mapx119y111 a:after, #mapx119y114 a:after, #mapx119y115 a:after, #mapx120y111 a:after, #mapx120y114 a:after, #mapx121y111 a:after, #mapx121y114 a:after, #mapx121y115 a:after { content: "Blattalisk"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+	
+	/* Buran - untote Bürger */
+	#mapx82y87 a:after, #mapx-196y-96 a:after, #mapx81y89 a:after, #mapx82y90 a:after, #mapx80y87 a:after, #mapx81y88 a:after, #mapx84y88 a:after, #mapx-185y-94 a:after, #mapx-193y-98 a:after { content: "Bürger"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+	/* Limm und Laree - Ektofrone */
+	#mapx59y93 a:after, #mapx50y84 a:after, #mapx51y82 a:after, #mapx51y85 a:after, #mapx55y88 a:after, #mapx57y88 a:after, #mapx58y88 a:after, #mapx58y91 a:after, #mapx59y84 a:after, #mapx59y88 a:after, #mapx59y92 a:after, #mapx60y87 a:after, #mapx60y88 a:after, #mapx60y92 a:after { content: "Ektofron"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+        
+        /*t-Falter - Lodradron*/
+#mapx109y76 a:after ,#mapx108y77 a:after ,#mapx111y77 a:after,#mapx112y79 a:after ,#mapx113y79 a:after ,#mapx116y79 a:after ,#mapx119y79 a:after ,#mapx115y80 a:after ,#mapx114y81 a:after ,#mapx-508y-375 a:after { content: "t-Falter"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; }
+
+        /*kröten - Itolos*/
+#mapx257y92 a:after ,#mapx259y92 a:after ,#mapx255y94 a:after ,#mapx257y94 a:after ,#mapx256y95 a:after ,#mapx258y95 a:after ,#mapx255y96 a:after { content: "Kröte"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; }
+
+        /*e-kröten - Itolos*/
+#mapx258y93 a:after ,#mapx261y93 a:after ,#mapx259y95 a:after ,#mapx254y96 a:after { content: "e-Kröte"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; }
+
+/* wiesel */
+       #mapx1006y1002:hover a:after , #mapx1008y1002:hover a:after , #mapx1005y1003:hover a:after , #mapx1007y1003:hover a:after , #mapx1008y1003:hover a:after , #mapx1009y1003:hover a:after , #mapx1004y1004:hover a:after , #mapx1005y1004:hover a:after , #mapx1006y1004:hover a:after , #mapx1004y1005:hover a:after , #mapx1005y1005:hover a:after , #mapx1007y1005:hover a:after , #mapx1008y1005:hover a:after , #mapx1009y1005:hover a:after , #mapx1011y1005:hover a:after , #mapx1005y1006:hover a:after  { content: "Wiesel"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+        
+        /*strativar*/
+#mapx196y128 a:after ,#mapx197y128 a:after ,#mapx195y129 a:after ,#mapx188y131 a:after ,#mapx193y131 a:after ,#mapx194y132 a:after ,#mapx191y133 a:after ,#mapx193y135 a:after { content: "Strativar"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; } /*UNVOLLSTÄNDIG*/
+
+        /*undarons*/
+#mapx-429y-298 a:after ,#mapx-425y-298 a:after ,#mapx-428y-296 a:after ,#mapx102y121 a:after ,#mapx106y124 a:after ,#mapx103y125 a:after ,#mapx105y125 a:after ,#mapx103y126 a:after ,#mapx104y126 a:after ,#mapx103y127 a:after ,#mapx105y127 a:after ,#mapx106y127 a:after ,#mapx107y127 a:after ,#mapx103y128 a:after ,#mapx106y128 a:after ,#mapx51y90 a:after ,#mapx53y98 a:after ,#mapx53y103 a:after ,#mapx-429y-298 a:after ,#mapx-425y-298 a:after ,#mapx-428y-296 a:after ,#mapx51y80 a:after ,#mapx53y85 a:after ,#mapx126y86 a:after ,#mapx121y87 a:after ,#mapx122y87 a:after ,#mapx119y89 a:after { content: "Undaron";  z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px;}

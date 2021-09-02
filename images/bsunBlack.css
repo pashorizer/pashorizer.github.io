@@ -1,0 +1,589 @@
+/* BETTER SUNFIRE */
+/* Stylegenerator v 0.1 by sniGG */
+/* http://www.fwwiki.de/index.php/Benutzer:Doran */
+
+/* Hilfe gibt es im Styleforum: http://forum.freewar.de/viewtopic.php?f=18&t=40823 */
+
+/* Besteht aus: */
+/* 1. Freewar.de StyleSheet Cold Sunfire v1.0 - (C) 2004 (Sotrax) */
+/* 2. Einigen Features aus dem "Kaspersky Style" -(isdrador) http://kstyle.infos.lc */
+/* 3. Den Runenpuzzle-Änderungen von Po1son*/
+/* 4. Diversen Änderungen von Latzhosenträger */
+/* 5. Diversen Änderungen von sniGG */
+
+/* Dank geht an alle, die Inhalte zur Verfügung gestellt haben, insbesondere Sotrax und isdrador. */
+/* Auch bedanke ich mich bei allen, die tatkräftig geholfen haben. */
+
+/* Einige Inhalte dieses Styles werden mittlerweile von vielen anderen Styles übernommen. Wenn jemand etwas übernehmen will, muss er eine PN an Latzhosenträger schreiben. */
+
+
+
+/* global */
+	p,ul,ol,div,td,span,layer,table,body	 
+				{ font-family: Arial, helvetica, sans-serif; font-size: 12px; color: #222222; }
+	p 			{ margin: 0px; padding: 0px; }
+
+/* body */
+	body 			{ background-color: black; margin: 0px; }
+
+/* table */
+	table 			{ border:0px; border-collapse: collapse; } /* cellspacing & cellpadding & border =0 no longer needed
+	td 			{ padding:0px; margin:0px; }
+
+/* scrollbars */
+/* body, textarea 		{ scrollbar-base-color:#BBBBBB; scrollbar-3dlight-color:black; scrollbar-arrow-color:#007F9F; scrollbar-darkshadow-color:#999999; scrollbar-face-color:#D5D5D5; scrollbar-highlight-color:black; scrollbar-shadow-color:#636363; scrollbar-track-color:#F5F5F5; } */
+
+/* links */
+	a:link 			{ color:#CC3300; text-decoration:none; font-weight:bold; }
+	a:visited 		{ color:#CC3300; text-decoration:none; font-weight:bold; }
+	a:active 		{ color:#FF3300; text-decoration:hover; font-weight:bold; }
+	a:hover 		{ color:#FF3300; text-decoration:underline; font-weight:bold; }
+
+/* fonts */
+	h1 			{ font-size:12px; font-weight:bold; margin-bottom: 0px;}
+	.medium 		{ font-size:11px; }
+	.small 			{ font-size:10px; }
+
+/* colors */
+	.fontcolor 		{ color: #555555; }
+	.white 			{ color: black; }
+
+/* bgcolors */
+	.body 			{ background-color: black; }
+	.divider 		{ background-color: #555555; }
+	.outline 		{ background-color: #999999; }
+	.menubg			{ background-color: #F1F1F1; }
+	.brightbg		{ background-color: #E5E5E5; }
+	.verybrightbg		{ background-color: #F1F1F1; }
+	.reallybrightbg		{ background-color: #FAFAFA; }
+	.whitebg		{ background-color: black; }
+	.blackbg 		{ background-color: black; }
+	.brownbg 		{ background-color: #E1D8D1; }
+
+/* forms */
+	.registerinput 	 	{ width: 100%; font-size: 10px; }
+	.registersubmit  	{ font-size: 10px; }
+	.logininput 	 	{ width: 100%; font-size: 10px; }
+	.loginsubmit		{ width: 100%; font-size: 10px; }
+
+/* forms */
+	.input 			{ font-size: 11px; background-color: #FFECD3; height: 17px; border: 1px solid #C85424; }
+	.submitsagen 		{ font-size: 11px; font-weight: bold; color: black; padding-bottom: 2px; width: 80px; height: 17px; margin-left: 2px; margin-right: 2px; border: thin #777777 solid; border-width: 1px; background-image: url(images/button_bg2.jpg); }
+	.submitschreien 	{ font-size: 11px; font-weight: bold; color: #004DA7; padding-bottom: 2px; width: 87px; height: 17px; margin-right: 2px; border: thin #777777 solid; border-width: 1px; background-image: url(images/button_bg2.jpg); }
+	.submitclan 		{ font-size: 11px; font-weight: bold; color: #D20000; padding-bottom: 2px; width: 80px; height: 17px; margin-right: 2px; border: thin #777777 solid; border-width: 1px; background-image: url(images/button_bg2.jpg); }
+	.submitworldsay 	{ font-size: 11px; font-weight: bold; color: black; padding-bottom: 2px; width: 80px; height: 17px; margin-right: 2px; border: thin #777777 solid; border-width: 1px; background-image: url(images/button_bg2.jpg); }
+	.submitgroup 		{ font-size: 11px; font-weight: bold; color: #E36B30; padding-bottom: 2px; width: 80px; height: 17px; margin-right: 2px; border: thin #777777 solid; border-width: 1px; background-image: url(images/button_bg2.jpg); }
+	.submitwhisper 		{ font-size: 11px; font-weight: bold; color: #006600; padding-bottom: 2px; width: 88px; height: 17px; margin-right: 2px; border: thin #777777 solid; border-width: 1px; background-image: url(images/button_bg2.jpg); }
+	textarea		{ font-size: 12px; background-color: #FFECD3; border: 1px solid #C85424; }
+	select 			{ font-size: 11px; background-color: #DBEBEF; }
+
+
+/* banner stuff */
+	.bannerad 		{ border: 1px solid #C85424; }
+
+/* text classes */
+	.chattext 		{ color: black; font-size: 13px; }
+	.chattextscream		{ color: #004DA7; font-size: 13px; }
+	.chattextclan 		{ color: #D20000; font-size: 13px; }
+	.chattextworldsay 	{ color: black; background-color: #C1CEF9; font-size: 13px; }
+	.chattextwhisper 	{ color: #006600; font-size: 13px; }
+	.healthmed		{ color: #FF8000; }
+	.healthok 		{ color: #309000; }
+	.healthcritical 	{ color: #D20000; }
+	.chatpics 		{ visibility: visible; }
+
+/* Wetter */
+	.chattextinfo 		{ color: #A37300; font-size: 13px; } 	/* normales Wetter */
+	.chattextinfo 		{ font-style: italic; }
+	.chattextinfo:before 	{ content: "Bemerkenswert: "; font-weight: bold; color: #A37300; } /* Bemerkenswertzeile - löschen/rauskommentieren wenn unerwünscht */
+
+
+/* frames bg */
+        .framebannerbg 		{ background-color: #C85424; background-image: url(images/bannerbg2.jpg); border-bottom: 1px solid black; }
+	.framechatformbg 	{ background-color: #E7E7E7; }
+	.framechattextbg 	{ background-color: #F8F8F8; margin: 10px; margin-top: 5px; margin-bottom: 5px; margin-right: 5px; }
+	.framemainbg 		{ margin: 10px; background-image: url(images/mainbg.jpg); background-repeat: repeat-y; background-position: right; }
+	.frameitembg 		{ margin: 10px; background-color: #DCDCDC; background-image: url(images/itembg.jpg); }
+	.framemapbg 		{ margin: 10px; margin-top: 3px; background-color: #C1BDBA; background-image: url(images/itembg.jpg); }
+	.framemenubg 		{ background-color: #C1BDBA; background-image: url(images/itembg.jpg); }
+
+/* main module */
+	td.mainheader 		{ font-size: 35px; background-image: url(images/headerbg.jpg); }
+	table.areadescription 	{ border: 1px solid #FFDAA9; background-color: #FFF8EF; width: 100%; }
+	td.areadescription 	{ padding: 0px; }
+	.imageborder 		{ border: 1px solid #C85424; background-color: #C85424; margin-right: 1px; margin-bottom: 1px;}
+	p.maincaption 		{ font-weight: bold; font-size: 30px; padding: 1px; padding-left: 1px; background-image: url(images/headerbg.jpg); }
+	p.maincaption2 		{ font-weight: bold; font-size: 12px; padding: 1px; padding-left: 1px; background-image: url(images/bluebg.jpg); }
+	p.maindesc1 		{ padding: 1px; padding-left: 1px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 1px; width: 300px; }
+	p.maindesc2 		{ border: 1px solid #FFDAA9; background-color: #FFF8EF; width: 100%; }
+	p.listplaceitemsrow 	{ padding: 1px; padding-left: 1px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 0px; }
+	p.listusersrow 		{ padding: 1px; padding-left: 1px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 0px; }
+
+/* item module */
+	p.listcaption 		{ border: 1px solid #A2A09F; font-weight: bold; padding: 1px; padding-left: 5px; background-image: url(images/button_bg.jpg); }
+	p.listsubcaption 	{ border-bottom: 1px solid #D6CBC2; }
+	p.listrow 		{ padding: 2px; padding-left: 5px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 0px; }
+	p.listitemrow 		{ padding: 2px; padding-left: 5px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 0px; border-top: 1px solid #D6CBC2; margin-bottom: 3px; }
+	p.listplaceitemsrow 	{ padding: 2px; padding-left: 5px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 0px; }
+	.valueincreased 	{ font-weight: bold; color: #ff0000; }
+	.itemamount 		{ font-weight: bold; color: #751700; }
+	.itemequipped 		{ font-weight: bold; color: #ff0000; }
+	.itemmagic 		{ font-weight: bold; color: #008800; }
+	.iteminventorypics 	{ visibility: visible; }
+
+/* map module */
+	p.positiontext 		{ background-color: #BBBBBB; border: 1px solid #555555; color: black; font-size: 10px; margin-left: 0px; margin-right: 0px; margin-bottom: 3px; padding-left: 0px; padding-right: 0px; width: 100%; }
+
+/* main module */
+	p.personlistcaption 	{ border: 1px solid #A2A09F; font-weight: bold; padding: 2px; padding-left: 5px; background-image: url(images/buttonblue_bg.jpg); }
+	p.itemlistcaption	{ border: 1px solid #A2A09F; font-weight: bold; padding: 2px; padding-left: 5px; background-image: url(images/buttonorange_bg.jpg); }
+
+/* misc */
+	.borderbg 		{ background-color: #D0CFCF; }
+	img.nocango 		{ background: transparent;}
+	a.nocango 		{ background: #transparent; height: 50px; width: 50px; border-width: 0; display: block;}
+	a.nocango:hover 	{ background: url(images/map/nocango.gif) top left no-repeat; cursor: default;}
+	.abilitymenu 		{ border:0px; border-collapse: collapse; }
+	.abilitymenu tr 	{ padding: 2px; padding-left: 5px; background-color: #ECE9E6; }
+	.abilitymenu td 	{ text-align: right; padding: 2px; padding-left: 5px; border: 1px solid #D6CBC2; }
+	td.c1 			{ text-align: left;}
+	.bold td		{ font-weight:bold;}
+	#plantrow 		{ border: 1px solid #A2A09F; font-weight: bold; padding: 2px; padding-left: 5px; background-image: url(images/buttongreen_bg.jpg); }
+	.friendlist 		{ border-collapse: collapse; }
+	.friendlist tr 		{ background-color: #ECE9E6; }
+	.friendlist td 		{ padding: 3px; border-bottom: 1px solid #D6CBC2; }
+
+/* Notruf rechtsbündig */
+	a[href*="clanmenu.php?action=sos"] {display: block; font-weight: bold; text-align: right;} /* Nicht optimal gelöst */
+
+/* Einstellungen */
+	a[href*="profil.php?action=skip"]:before 	{ content: url(images/check.png); padding-right: 2px; }
+	a[href*="profil.php?action=skip"]:hover 	{ color: #D20000 !important; }
+	a[href*="profil.php?action=show"]:before 	{ content: url(images/cross.png); padding-right: 2px; }
+	a[href*="profil.php?action=show"]:hover 	{ color: #008800 !important; }
+	a[href*="profil.php?action=enable"]:before 	{ content: url(images/cross.png); padding-right: 2px; }
+	a[href*="profil.php?action=enable"]:hover 	{ color: #008800 !important; }
+	form > input[name="ownstyle"] 			{ width: 100%; }
+
+/* Item-/Gelduebergabe */
+	.frameitembg a[href*="item.php?action=transfer2"] 	{ display: inline-block; margin: 0px 0px 5px 5px; }
+	.frameitembg a[href*="item.php?action=moneytransfer3"] 	{ display: inline-block; margin: 0px 0px 5px 5px; }
+
+/* Waffenzustand direkt hinter der Waffe, erinnert an Reparatur */
+	p[title$="100%"]:after { content: " (100%)"; color: #309000;font-size: smaller; }
+	p[title$="99%"]:after { content: " (99%)"; color: #309000;font-size: smaller; }
+	p[title$="98%"]:after { content: " (98%)"; color: #309000;font-size: smaller; }
+	p[title$="97%"]:after { content: " (97%)"; color: #309000;font-size: smaller; }
+	p[title$="96%"]:after { content: " (96%)"; color: #309000;font-size: smaller; }
+	p[title$="95%"]:after { content: " (95%)"; color: #309000;font-size: smaller; }
+	p[title$="94%"]:after { content: " (94%)"; color: #309000;font-size: smaller; }
+	p[title$="93%"]:after { content: " (93%)"; color: #309000;font-size: smaller; }
+	p[title$="92%"]:after { content: " (92%)"; color: #309000;font-size: smaller; }
+	p[title$="91%"]:after { content: " (91%)"; color: #309000;font-size: smaller; }
+	p[title$="90%"]:after { content: " (90%)"; color: #309000;font-size: smaller; }
+	p[title$="89%"]:after { content: " (89%)"; color: #309000;font-size: smaller; }
+	p[title$="88%"]:after { content: " (88%)"; color: #309000;font-size: smaller; }
+	p[title$="87%"]:after { content: " (87%)"; color: #309000;font-size: smaller; }
+	p[title$="86%"]:after { content: " (86%)"; color: #309000;font-size: smaller; }
+	p[title$="85%"]:after { content: " (85%)"; color: #309000;font-size: smaller; }
+	p[title$="84%"]:after { content: " (84%)"; color: #309000;font-size: smaller; }
+	p[title$="83%"]:after { content: " (83%)"; color: #309000;font-size: smaller; }
+	p[title$="82%"]:after { content: " (82%)"; color: #309000;font-size: smaller; }
+	p[title$="81%"]:after { content: " (81%)"; color: #309000;font-size: smaller; }
+	p[title$="80%"]:after { content: " (80%)"; color: #309000;font-size: smaller; }
+	p[title$="79%"]:after { content: " (79%)"; color: #309000;font-size: smaller; }
+	p[title$="78%"]:after { content: " (78%)"; color: #309000;font-size: smaller; }
+	p[title$="77%"]:after { content: " (77%)"; color: #309000;font-size: smaller; }
+	p[title$="76%"]:after { content: " (76%)"; color: #309000;font-size: smaller; }
+	p[title$="75%"]:after { content: " (75%)"; color: #309000;font-size: smaller; }
+	p[title$="74%"]:after { content: " (74%)"; color: #309000;font-size: smaller; }
+	p[title$="73%"]:after { content: " (73%)"; color: #309000;font-size: smaller; }
+	p[title$="72%"]:after { content: " (72%)"; color: #309000;font-size: smaller; }
+	p[title$="71%"]:after { content: " (71%)"; color: #309000;font-size: smaller; }
+	p[title$="70%"]:after { content: " (70%)"; color: #309000;font-size: smaller; }
+	p[title$="69%"]:after { content: " (69%)"; color: #309000;font-size: smaller; }
+	p[title$="68%"]:after { content: " (68%)"; color: #309000;font-size: smaller; }
+	p[title$="67%"]:after { content: " (67%)"; color: #309000;font-size: smaller; }
+	p[title$="66%"]:after { content: " (66%)"; color: #309000;font-size: smaller; }
+	p[title$="65%"]:after { content: " (65%)"; color: #309000;font-size: smaller; }
+	p[title$="64%"]:after { content: " (64%)"; color: #309000;font-size: smaller; }
+	p[title$="63%"]:after { content: " (63%)"; color: #309000;font-size: smaller; }
+	p[title$="62%"]:after { content: " (62%)"; color: #309000;font-size: smaller; }
+	p[title$="61%"]:after { content: " (61%)"; color: #309000;font-size: smaller; }
+	p[title$="60%"]:after { content: " (60%)"; color: #309000;font-size: smaller; }
+	p[title$="59%"]:after { content: " (59%)"; color: #309000;font-size: smaller; }
+	p[title$="58%"]:after { content: " (58%)"; color: #309000;font-size: smaller; }
+	p[title$="57%"]:after { content: " (57%)"; color: #309000;font-size: smaller; }
+	p[title$="56%"]:after { content: " (56%)"; color: #309000;font-size: smaller; }
+	p[title$="55%"]:after { content: " (55%)"; color: #309000;font-size: smaller; }
+	p[title$="54%"]:after { content: " (54%)"; color: #309000;font-size: smaller; }
+	p[title$="53%"]:after { content: " (53%)"; color: #309000;font-size: smaller; }
+	p[title$="52%"]:after { content: " (52%)"; color: #309000;font-size: smaller; }
+	p[title$="51%"]:after { content: " (51%)"; color: #309000;font-size: smaller; }
+	p[title$="50%"]:after { content: " (50%)"; color: #309000;font-size: smaller; }
+	p[title$="49%"]:after { content: " (49%)"; color: #FF8000;font-size: smaller; }
+	p[title$="48%"]:after { content: " (48%)"; color: #FF8000;font-size: smaller; }
+	p[title$="47%"]:after { content: " (47%)"; color: #FF8000;font-size: smaller; }
+	p[title$="46%"]:after { content: " (46%)"; color: #FF8000;font-size: smaller; }
+	p[title$="45%"]:after { content: " (45%)"; color: #FF8000;font-size: smaller; }
+	p[title$="44%"]:after { content: " (44%)"; color: #FF8000;font-size: smaller; }
+	p[title$="43%"]:after { content: " (43%)"; color: #FF8000;font-size: smaller; }
+	p[title$="42%"]:after { content: " (42%)"; color: #FF8000;font-size: smaller; }
+	p[title$="41%"]:after { content: " (41%)"; color: #FF8000;font-size: smaller; }
+	p[title$="40%"]:after { content: " (40%)"; color: #FF8000;font-size: smaller; }
+	p[title$="39%"]:after { content: " (39%)"; color: #FF8000;font-size: smaller; }
+	p[title$="38%"]:after { content: " (38%)"; color: #FF8000;font-size: smaller; }
+	p[title$="37%"]:after { content: " (37%)"; color: #FF8000;font-size: smaller; }
+	p[title$="36%"]:after { content: " (36%)"; color: #FF8000;font-size: smaller; }
+	p[title$="35%"]:after { content: " (35%)"; color: #FF8000;font-size: smaller; }
+	p[title$="34%"]:after { content: " (34%)"; color: #FF8000;font-size: smaller; }
+	p[title$="33%"]:after { content: " (33%)"; color: #FF8000;font-size: smaller; }
+	p[title$="32%"]:after { content: " (32%)"; color: #FF8000;font-size: smaller; }
+	p[title$="31%"]:after { content: " (31%)"; color: #FF8000;font-size: smaller; }
+	p[title$="30%"]:after { content: " (30%)"; color: #FF8000;font-size: smaller; }
+	p[title$="29%"]:after { content: " (29%)"; color: #FF8000;font-size: smaller; }
+	p[title$="28%"]:after { content: " (28%)"; color: #FF8000;font-size: smaller; }
+	p[title$="27%"]:after { content: " (27%)"; color: #FF8000;font-size: smaller; }
+	p[title$="26%"]:after { content: " (26%)"; color: #FF8000;font-size: smaller; }
+	p[title$="25%"]:after { content: " (25%)"; color: #FF8000;font-size: smaller; }
+	p[title$="24%"]:after { content: " (24%)"; color: #D20000;font-size: smaller; }
+	p[title$="23%"]:after { content: " (23%)"; color: #D20000;font-size: smaller; }
+	p[title$="22%"]:after { content: " (22%)"; color: #D20000;font-size: smaller; }
+	p[title$="21%"]:after { content: " (21%)"; color: #D20000;font-size: smaller; }
+	p[title$="20%"]:after { content: " (20%)"; color: #D20000;font-size: smaller; }
+	p[title$="19%"]:after { content: " (19%)"; color: #D20000;font-size: smaller; }
+	p[title$="18%"]:after { content: " (18%)"; color: #D20000;font-size: smaller; }
+	p[title$="17%"]:after { content: " (17%)"; color: #D20000;font-size: smaller; }
+	p[title$="16%"]:after { content: " (16%)"; color: #D20000;font-size: smaller; }
+	p[title$="15%"]:after { content: " (15%)"; color: #D20000;font-size: smaller; }
+	p[title$="14%"]:after { content: " (14%)"; color: #D20000;font-size: smaller; }
+	p[title$="13%"]:after { content: " (13%)"; color: #D20000;font-size: smaller; }
+	p[title$="12%"]:after { content: " (12%)"; color: #D20000;font-size: smaller; }
+	p[title$="11%"]:after { content: " (11%)"; color: #D20000;font-size: smaller; }
+	p[title$="10%"]:after { content: " (10%)"; color: #D20000;}
+	p[title$=" 9%"]:after { content: " (9%)"; color: #D20000;}
+	p[title$=" 8%"]:after { content: " (8%)"; color: #D20000;}
+	p[title$=" 7%"]:after { content: " (7%)"; color: #D20000;}
+	p[title$=" 6%"]:after { content: " (6%)"; color: #D20000;}
+	p[title$=" 5%"]:after { content: " (5%)"; color: #D20000; text-decoration:blink;}
+	p[title$=" 4%"]:after { content: " (4%)"; color: #D20000; text-decoration:blink;}
+	p[title$=" 3%"]:after { content: " Reparieren!"; color:#FF0000; text-decoration:blink; font-size: larger; font-weight: bold;}
+	p[title$=" 2%"]:after { content: " Reparieren!"; color:#FF0000; text-decoration:blink; font-size: larger; font-weight: bold;}
+	p[title$=" 1%"]:after { content: " Reparieren!"; color:#FF0000; text-decoration:blink; font-size: larger; font-weight: bold;}
+
+/* Zustände blinken beim Auslaufen */
+	span[title*="(2 Minuten)"] { color:#D20000; text-decoration:blink;}
+	span[title*="(1 Minuten)"] { color:#D20000; text-decoration:blink; font-size: larger; font-weight: bold;}
+	span[title*="(0 Minuten)"] { color:#D20000; text-decoration:blink; font-size: larger; font-weight: bold;}
+
+/* Agressive NPC blinken */
+	.aggressivenpc 		   { font-weight: bold; color: #FF0000; text-decoration:blink; font-weight: bold;}
+
+/* Aggressive NPCs auf der Karte */
+	.framemapbg td[id^="map"] a { position: relative; text-decoration: none; display: inline-block; width: 50px; height: 50px; }
+
+/* > > A3 */
+	#mapx-426y-298 a:after, #mapx-428y-297 a:after, #mapx-427y-297 a:after, #mapx-425y-297 a:after, #mapx-427y-296 a:after, #mapx-426y-296 a:after { content: "3"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* > > A9 */
+	#mapx-827y-914 a:after, #mapx-826y-912 a:after, #mapx-823y-912 a:after, #mapx-825y-911 a:after, #mapx-822y-910 a:after, #mapx-826y-908 a:after, #mapx-823y-906 a:after, #mapx-824y-905 a:after, #mapx-826y-904 a:after, #mapx-823y-903 a:after { content: "9"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* > > A10 - 2630 */
+	#mapx-826y-916 a:after, #mapx-825y-914 a:after, #mapx-827y-913 a:after, #mapx-825y-912 a:after, #mapx-825y-910 a:after, #mapx-827y-909 a:after, #mapx-823y-908 a:after, #mapx-823y-905 a:after, #mapx-826y-903 a:after, #mapx-230y-538 a:after { content: "10 - 2630"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* > > A12 */
+	#mapx-348y-699 a:after, #mapx-347y-699 a:after, #mapx-349y-698 a:after, #mapx-348y-698 a:after, #mapx-347y-698 a:after, #mapx-349y-697 a:after, #mapx-348y-697 a:after, #mapx-347y-697 a:after, #mapx-346y-697 a:after, #mapx-348y-696 a:after, #mapx-347y-696 a:after, #mapx-346y-696 a:after, #mapx-348y-695 a:after, #mapx-347y-695 a:after, #mapx-346y-695 a:after, #mapx-345y-695 a:after, #mapx-348y-694 a:after, #mapx-347y-694 a:after, #mapx-346y-694 a:after, #mapx-345y-694 a:after, #mapx-348y-693 a:after, #mapx-347y-693 a:after, #mapx-346y-693 a:after, #mapx-345y-693 a:after { content: "12"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* > > A25 */
+	#mapx-226y-540 a:after, #mapx-228y-539 a:after, #mapx-224y-539 a:after, #mapx-229y-538 a:after, #mapx-227y-538 a:after, #mapx-225y-538 a:after { content: "25"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* > > A25 / 710 */
+	#mapx-224y-541 a:after { content: "25 / 710"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* > > A34 */
+	#mapx-605y-267 a:after, #mapx-608y-266 a:after, #mapx-607y-266 a:after, #mapx-606y-266 a:after, #mapx-605y-266 a:after, #mapx-604y-265 a:after, #mapx-610y-264 a:after, #mapx-602y-264 a:after, #mapx-601y-263 a:after, #mapx-613y-262 a:after, #mapx-611y-262 a:after, #mapx-609y-262 a:after, #mapx-607y-262 a:after, #mapx-600y-262 a:after, #mapx-606y-261 a:after, #mapx-605y-260 a:after, #mapx-601y-260 a:after { content: "34"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* > > A35 */
+	#mapx-428y-298 a:after, #mapx-424y-298 a:after, #mapx-426y-297 a:after, #mapx-425y-296 a:after { content: "35"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* > > A35 / 1040 */
+	#mapx-426y-299 a:after { content: "35 / 1040"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* > > A271 */
+	#mapx-825y-915 a:after, #mapx-826y-914 a:after, #mapx-826y-911 a:after, #mapx-827y-910 a:after, #mapx-825y-909 a:after, #mapx-822y-909 a:after, #mapx-825y-904 a:after, #mapx-826y-918 a:after { content: "271"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* > > A465 */
+	#mapx-738y-230 a:after, #mapx-736y-230 a:after, #mapx-738y-229 a:after, #mapx-737y-229 a:after, #mapx-736y-229 a:after, #mapx-740y-228 a:after, #mapx-739y-228 a:after, #mapx-737y-228 a:after, #mapx-736y-227 a:after { content: "465"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* > > A666 */
+	#mapx-199y-829 a:after, #mapx-199y-828 a:after, #mapx-198y-828 a:after, #mapx-199y-827 a:after { content: "666"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* > > A710 */
+	#mapx-225y-541 a:after { content: "710"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* > > A1630 */
+	#mapx-223y-541 a:after, #mapx-225y-540 a:after { content: "1630"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* > > A2710 */
+	#mapx-821y-910 a:after { content: "2710"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+/* Auftrags NPCs auf der Karte*/
+
+	/* Ruward - Onloskelette */
+	#mapx70y105 a:after, #mapx70y108 a:after, #mapx70y108 a:after, #mapx71y105 a:after, #mapx71y107 a:after, #mapx72y106 a:after, #mapx73y105 a:after, #mapx73y106 a:after, #mapx74y104 a:after  { content: "Onlo"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+	
+	/* Lardikia - Blattalisken */	 
+	#mapx119y111 a:after, #mapx119y114 a:after, #mapx119y115 a:after, #mapx120y111 a:after, #mapx120y114 a:after, #mapx121y111 a:after, #mapx121y114 a:after, #mapx121y115 a:after { content: "Blattalisk"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+	
+	/* Buran - untote Bürger */
+	#mapx82y87 a:after, #mapx-196y-96 a:after, #mapx81y89 a:after, #mapx82y90 a:after, #mapx80y87 a:after, #mapx81y88 a:after, #mapx84y88 a:after, #mapx-185y-94 a:after, #mapx-193y-98 a:after { content: "Bürger"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+
+	/* Limm und Laree - Ektofrone */
+	#mapx59y93 a:after, #mapx50y84 a:after, #mapx51y82 a:after, #mapx51y85 a:after, #mapx55y88 a:after, #mapx57y88 a:after, #mapx58y88 a:after, #mapx58y91 a:after, #mapx59y84 a:after, #mapx59y88 a:after, #mapx59y92 a:after, #mapx60y87 a:after, #mapx60y88 a:after, #mapx60y92 a:after { content: "Ektofron"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; }
+        
+        /*t-Falter - Lodradron*/
+#mapx109y76 a:after ,#mapx108y77 a:after ,#mapx112y79 a:after ,#mapx113y79 a:after ,#mapx116y79 a:after ,#mapx119y79 a:after ,#mapx115y80 a:after ,#mapx114y81 a:after ,#mapx-508y-375 a:after { content: "t-Falter"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; }
+
+        /*kröten - Itolos*/
+#mapx257y92 a:after ,#mapx259y92 a:after ,#mapx255y94 a:after ,#mapx257y94 a:after ,#mapx256y95 a:after ,#mapx258y95 a:after ,#mapx255y96 a:after { content: "Kröte"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; }
+
+        /*e-kröten - Itolos*/
+#mapx258y93 a:after ,#mapx261y93 a:after ,#mapx259y95 a:after ,#mapx254y96 a:after { content: "e-Kröte"; z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; }
+
+/* Inventarveränderungen (CID)*/
+
+	p.listitemrow 							{ position: relative; padding: 2px 4px 3px 4px; font-size: 1px; color: transparent; border: 1px solid #BABABA; }
+	p.listitemrow:hover 						{ padding: 2px 65px 3px 4px; }
+	p.listitemrow + p 						{ margin-top: 3px; }
+	p.listitemrow a[href*="action=activate"] 			{ display: block; height: 0px; margin: -2px 0px 0px 300px; }
+	p.listitemrow:hover a[href*="action=activate"]:before 		{ content: url(images/act.png); position: absolute; top: 2px; right: 47px; opacity: 0.80; }
+	p.listitemrow:hover a[href*="action=activate"]:hover:before 	{ opacity: 1.00; }
+	p.listitemrow b 						{ font-size: 11px; color: black; }
+	.itemamount 							{ font-size: 11px; margin-right: 1px; }
+	.itemmagic 							{ font-size: 11px; margin-left: 1px; }
+	.itemequipped b 						{ color: #D20000 !important; }
+	p.listitemrow .iteminventorypics 				{ max-height: 14px; opacity: 0.80; }
+	p.listitemrow .iteminventorypics:hover 				{ opacity: 1.00; }
+	p.listitemrow img[src$="icon_transfer.gif"] 			{ display: none; }
+	p.listitemrow img[src$="icon_drop.gif"] 			{ display: none; }
+	p.listitemrow img[src$="icon_view.gif"] 			{ display: none; }
+	p.listitemrow:hover img[src$="icon_transfer.gif"] 		{ display: inline-block; position: absolute; top: 3px; right: 2px; }
+	p.listitemrow:hover img[src$="icon_drop.gif"] 			{ display: inline-block; position: absolute; top: 4px; right: 16px; }
+	p.listitemrow:hover img[src$="icon_view.gif"] 			{ display: inline-block; position: absolute; top: 4px; right: 28px; }
+	p.listitemrow span.medium 					{ font-size: 1px; color: transparent; }
+	p.listitemrow span.medium a 					{ font-size: 1px; color: #FF0000; display: block; height: 0px; margin: -2px 0px 0px 300px; }
+	#filterrow 							{ padding: 2px; }
+	#filterrow b 							{ font-size: 10px; }
+	#filterrow:before 						{ color: #5E5E5E; }
+
+/* Rassen der Clanmitglieder im Clanmenu */
+
+	.frameitembg *[title*="Mensch"]:after 	{ display: block; content:" ("attr(title)")"; color:black; }
+	.frameitembg *[title*="Onlo"]:after 	{ display: block; content:" ("attr(title)")"; color:black; }
+	.frameitembg *[title*="Natla"]:after 	{ display: block; content:" ("attr(title)")"; color:black; }
+	.frameitembg *[title*="dunkler"]:after 	{ display: block; content:" ("attr(title)")"; color:black; }
+	.frameitembg *[title*="Serum"]:after 	{ display: block; content:" ("attr(title)")"; color:black; }
+	.frameitembg *[title*="Taruner"]:after 	{ display: block; content:" ("attr(title)")"; color:black; }
+
+/* Runenpuzzle mit Zahlen statt Bildern */
+
+	img[src$="minigame/a1.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(images/Runenpuzzel/1.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
+	img[src$="minigame/a2.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(images/Runenpuzzel/2.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
+	img[src$="minigame/a3.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(images/Runenpuzzel/3.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
+	img[src$="minigame/a4.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(images/Runenpuzzel/4.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
+	img[src$="minigame/a5.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(images/Runenpuzzel/5.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
+	img[src$="minigame/a6.gif"] 		{ display: inline-block; width: 0px; height: 40px; background: url(images/Runenpuzzel/6.png); background-repeat: no-repeat; padding-left: 40px; overflow: hidden; }
+
+/* Spezialworldsays ausblenden */
+
+	/* Gelb */
+	p.worldsay table tr[bgcolor="#FFDA47"] 		{ display:none; }
+	p.worldsay table tr[bgcolor="#FFDA47"] td	{ display:none; }
+
+	/* Pink */
+	p.worldsay table tr[bgcolor="#FFAEA1"] 		{ display:none; }
+	p.worldsay table tr[bgcolor="#FFAEA1"] td 	{ display:none; }
+
+	/* Orange */
+	p.worldsay table tr[bgcolor="#F8A370"] 		{ display:none; }
+	p.worldsay table tr[bgcolor="#F8A370"] td 	{ display:none; }
+
+/* > VTI-Zusatzkomponente */ 
+select[name="z_pos_id"] { height: 19px; width: 230px; }
+select[name="z_pos_id"] > option:hover { height: 25px; padding-left: 30px; }
+select[name="z_pos_id"] > option:hover:after { display: block; margin-top: -2px; font-size: 10px; }
+select[name="checkid"] > option:hover, select[name="target_id"] > option:hover, select[name="tube"] > option:hover, select[name*="anz"] > option:hover, select[name="filtercat"] > option:hover, select[name="world"] > option:hover { background: none !important; }
+select[name="checkid"] > option:hover:after, select[name="target_id"] > option:hover:after, select[name="tube"] > option:hover:after, select[name*="anz"] > option:hover:after, select[name="filtercat"] > option:hover:after, select[name="world"] > option:hover:after { display: none !important; }
+
+/* > > gepresste Zk; große Zk; kleine Zk; Schattenfluegel; Nebel der Teleportation */
+option[value="2"]:hover { background: url(images/vti/a1.png) no-repeat 2px 0px; }
+option[value="2"]:hover:after { content: "(Position X: 101 Y: 100)"; }
+option[value="68"]:hover { background: url(images/vti/a2.png) no-repeat 2px 0px; }
+option[value="68"]:hover:after { content: "(Position X: 85 Y: 102)"; }
+option[value="73"]:hover { background: url(images/vti/a3.png) no-repeat 2px 0px; }
+option[value="73"]:hover:after { content: "(Position X: 92 Y: 105)"; }
+option[value="87"]:hover { background: url(images/vti/a4.png) no-repeat 2px 0px; }
+option[value="87"]:hover:after { content: "(Position X: 97 Y: 108)"; }
+option[value="110"]:hover { background: url(images/vti/a5.png) no-repeat 2px 0px; }
+option[value="110"]:hover:after { content: "(Position X: 93 Y: 96)"; }
+option[value="169"]:hover { background: url(../simg/kon1s.png) no-repeat 2px 0px; }
+option[value="169"]:hover:after { content: "(Position X: 81 Y: 94)"; }
+option[value="290"]:hover { background: url(images/vti/a7.png) no-repeat 2px 0px; }
+option[value="290"]:hover:after { content: "(Position X: 99 Y: 115)"; }
+option[value="387"]:hover { background: url(images/vti/a8.png) no-repeat 2px 0px; }
+option[value="387"]:hover:after { content: "(Position X: 501 Y: 51)"; }
+option[value="437"]:hover { background: url(images/vti/a9.png) no-repeat 2px 0px; }
+option[value="437"]:hover:after { content: "(Position X: 103 Y: 110)"; }
+option[value="538"]:hover { background: url(images/vti/a10.png) no-repeat 2px 0px; }
+option[value="538"]:hover:after { content: "(Position X: 80 Y: 87)"; }
+option[value="816"]:hover { background: url(images/vti/a11.png) no-repeat 2px 0px; }
+option[value="816"]:hover:after { content: "(Position X: 71 Y: 92)"; }
+option[value="884"]:hover { background: url(images/vti/a12.png) no-repeat 2px 0px; }
+option[value="884"]:hover:after { content: "(Position X: 92 Y: 90)"; }
+option[value="988"]:hover { background: url(images/vti/a13.png) no-repeat 2px 0px; }
+option[value="988"]:hover:after { content: "(Position X: 108 Y: 114)"; }
+option[value="1079"]:hover { background: url(images/vti/a14.png) no-repeat 2px 0px; }
+option[value="1079"]:hover:after { content: "(Position X: 100 Y: 94)"; }
+option[value="1321"]:hover { background: url(images/vti/a15.png) no-repeat 2px 0px; }
+option[value="1321"]:hover:after { content: "(Position X: 75 Y: 99)"; }
+option[value="1715"]:hover { background: url(images/vti/a16.png) no-repeat 2px 0px; }
+option[value="1715"]:hover:after { content: "(Position X: 66 Y: 111)"; }
+option[value="4304"]:hover { background: url(images/vti/a17.png) no-repeat 2px 0px; }
+option[value="4304"]:hover:after { content: "(Position X: 114 Y: 76)"; }
+
+/* > > gelbe Zk; geklebte, gelbe Zk */
+option[value="227"]:hover { background: url(images/vti/b1.png) no-repeat 2px 0px; }
+option[value="227"]:hover:after { content: "(Position X: -798 Y: -798)"; }
+option[value="244"]:hover { background: url(images/vti/b2.png) no-repeat 2px 0px; }
+option[value="244"]:hover:after { content: "(Position X: -785 Y: -786)"; }
+option[value="377"]:hover { background: url(images/vti/b3.png) no-repeat 2px 0px; }
+option[value="377"]:hover:after { content: "(Position X: -803 Y: -808)"; }
+option[value="1204"]:hover { background: url(images/vti/b4.png) no-repeat 2px 0px; }
+option[value="1204"]:hover:after { content: "(Position X: -347 Y: -693)"; }
+option[value="1366"]:hover { background: url(images/vti/b5.png) no-repeat 2px 0px; }
+option[value="1366"]:hover:after { content: "(Position X: -599 Y: -449)"; }
+option[value="3164"]:hover { background: url(images/vti/b6.png) no-repeat 2px 0px; }
+option[value="3164"]:hover:after { content: "(Position X: -823 Y: -778)"; }
+option[value="4332"]:hover { background: url(images/vti/b7.png) no-repeat 2px 0px; }
+option[value="4332"]:hover:after { content: "(Position X: -507 Y: -377)"; }
+
+/* > > Portal(-maschine) */
+option[value="2463"]:hover { background: url(images/vti/c1.png) no-repeat 2px 0px; }
+option[value="2463"]:hover:after { content: "(Position X: 129 Y: 90)"; }
+option[value="2609"]:hover { background: url(images/vti/c2.png) no-repeat 2px 0px; }
+option[value="2609"]:hover:after { content: "(Position X: 144 Y: 126)"; }
+option[value="3013"]:hover { background: url(images/vti/c3.png) no-repeat 2px 0px; }
+option[value="3013"]:hover:after { content: "(Position X: 118 Y: 124)"; }
+option[value="2113"]:hover { background: url(images/vti/c4.png) no-repeat 2px 0px; }
+option[value="2113"]:hover:after { content: "(Position X: 58 Y: 98)"; }
+option[value="1059"]:hover { background: url(images/vti/c5.png) no-repeat 2px 0px; }
+option[value="1059"]:hover:after { content: "(Position X: 106 Y: 93)"; }
+option[value="1581"]:hover { background: url(images/vti/c6.png) no-repeat 2px 0px; }
+option[value="1581"]:hover:after { content: "(Position X: 90 Y: 115)"; }
+option[value="2068"]:hover { background: url(images/vti/c7.png) no-repeat 2px 0px; }
+option[value="2068"]:hover:after { content: "(Position X: 62 Y: 83)"; }
+option[value="1766"]:hover { background: url(images/vti/c8.png) no-repeat 2px 0px; }
+option[value="1766"]:hover:after { content: "(Position X: 59 Y: 106)"; }
+option[value="2398"]:hover { background: url(images/vti/c9.png) no-repeat 2px 0px; }
+option[value="2398"]:hover:after { content: "(Position X: 122 Y: 100)"; }
+option[value="1813"]:hover { background: url(images/vti/c10.png) no-repeat 2px 0px; }
+option[value="1813"]:hover:after { content: "(Position X: 115 Y: 100)"; }
+option[value="1453"]:hover { background: url(images/vti/c11.png) no-repeat 2px 0px; }
+option[value="1453"]:hover:after { content: "(Position X: 122 Y: 116)"; }
+option[value="2216"]:hover { background: url(images/vti/c12.png) no-repeat 2px 0px; }
+option[value="2216"]:hover:after { content: "(Position X: 135 Y: 115)"; }
+option[value="1229"]:hover { background: url(images/vti/c13.png) no-repeat 2px 0px; }
+option[value="1229"]:hover:after { content: "(Position X: 110 Y: 107)"; }
+option[value="3098"]:hover { background: url(images/vti/c14.png) no-repeat 2px 0px; }
+option[value="3098"]:hover:after { content: "(Position X: 96 Y: 78)"; }
+option[value="2830"]:hover { background: url(images/vti/c15.png) no-repeat 2px 0px; }
+option[value="2830"]:hover:after { content: "(Position X: 64 Y: 80)"; }
+option[value="1749"]:hover { background: url(images/vti/c16.png) no-repeat 2px 0px; }
+option[value="1749"]:hover:after { content: "(Position X: 72 Y: 116)"; }
+option[value="1606"]:hover { background: url(images/vti/c17.png) no-repeat 2px 0px; }
+option[value="1606"]:hover:after { content: "(Position X: 121 Y: 91)"; }
+option[value="2350"]:hover { background: url(images/vti/c18.png) no-repeat 2px 0px; }
+option[value="2350"]:hover:after { content: "(Position X: 111 Y: 83)"; }
+option[value="3743"]:hover { background: url(images/vti/c19.png) no-repeat 2px 0px; }
+option[value="3743"]:hover:after { content: "(Position X: 54 Y: 76)"; }
+option[value="140"]:hover { background: url(images/vti/d1.png) no-repeat 2px 0px; }
+option[value="140"]:hover:after { content: "(Position X: -100 Y: -95)"; }
+option[value="3038"]:hover { background: url(images/vti/d2.png) no-repeat 2px 0px; }
+option[value="3038"]:hover:after { content: "(Position X: -605 Y: -206)"; }
+option[value="3519"]:hover { background: url(images/vti/d3.png) no-repeat 2px 0px; }
+option[value="3519"]:hover:after { content: "(Position X: -827 Y: -919)"; }
+option[value="2645"]:hover { background: url(images/vti/d4.png) no-repeat 2px 0px; }
+option[value="2645"]:hover:after { content: "(Position X: -286 Y: -479)"; }
+
+/* > > Stab des Handels */
+option[value="31"]:hover { background: url(images/vti/e1.png) no-repeat 2px 0px; }
+option[value="31"]:hover:after { content: "(Position X: 96 Y: 101)"; }
+option[value="1019"]:hover { background: url(images/vti/e2.png) no-repeat 2px 0px; }
+option[value="1019"]:hover:after { content: "(Position X: 87 Y: 87)"; }
+option[value="1363"]:hover { background: url(images/vti/e3.png) no-repeat 2px 0px; }
+option[value="1363"]:hover:after { content: "(Position X: 88 Y: 89)"; }
+option[value="1403"]:hover { background: url(images/vti/e4.png) no-repeat 2px 0px; }
+option[value="1403"]:hover:after { content: "(Position X: 87 Y: 90)"; }
+option[value="1846"]:hover { background: url(images/vti/e5.png) no-repeat 2px 0px; }
+option[value="1846"]:hover:after { content: "(Position X: 117 Y: 113)"; }
+
+/* > > Ring des Sandwindes */
+option[value="288"]:hover { background: url(images/vti/f1.png) no-repeat 2px 0px; }
+option[value="288"]:hover:after { content: "(Position X: 98 Y: 120)"; }
+option[value="972"]:hover { background: url(images/vti/f2.png) no-repeat 2px 0px; }
+option[value="972"]:hover:after { content: "(Position X: 98 Y: 81)"; }
+option[value="1443"]:hover { background: url(images/vti/f3.png) no-repeat 2px 0px; }
+option[value="1443"]:hover:after { content: "(Position X: 121 Y: 112)"; }
+option[value="1547"]:hover { background: url(images/vti/f4.png) no-repeat 2px 0px; }
+option[value="1547"]:hover:after { content: "(Position X: 72 Y: 85)"; }
+option[value="1612"]:hover { background: url(images/vti/f5.png) no-repeat 2px 0px; }
+option[value="1612"]:hover:after { content: "(Position X: 123 Y: 92)"; }
+option[value="1762"]:hover { background: url(images/vti/f6.png) no-repeat 2px 0px; }
+option[value="1762"]:hover:after { content: "(Position X: 58 Y: 107)"; }
+option[value="2014"]:hover { background: url(images/vti/f7.png) no-repeat 2px 0px; }
+option[value="2014"]:hover:after { content: "(Position X: 65 Y: 96)"; }
+
+/* > > Scheibe der Kampfgebiete */
+option[value="2039"]:hover { background: url(images/vti/g1.png) no-repeat 2px 0px; }
+option[value="2039"]:hover:after { content: "(Position X: -1298 Y: -1396)"; }
+
+/* Inventar-Platzschaffende Änderungen */
+	p.listcaption + p.listrow .small b + b 		{ margin: 0 0 0 -6px; }
+	p.listcaption + p.listrow .small b + b:before 	{ content: " | "; background: #ECE9E6; }
+
+	p.listcaption + p + p + p + p + p + p + p.listrow .valueincreased, p.listcaption + p + p + p + p + p + p + p + p.listrow .valueincreased, p.listcaption + p + p + p + p + p + p + p + p + p.listrow .valueincreased { display:inline-block; width:150px; }
+	p.listcaption + p + p + p + p + p + p + p.listrow, p.listcaption + p + p + p + p + p + p + p + p.listrow, p.listcaption + p + p + p + p + p + p + p + p +p.listrow { overflow:hidden; white-space:nowrap; }
+	p[title~="Zustand:"] 				{ padding: 0 0 0 45px; }
+	p[title~="Zustand:"] b 				{ position:absolute; left:-170px; }
+	p[title~="Zustand:"] b:before 			{ content:"Waffe: "; position:relative; left:185px; }	
+	
+	.valueincreased 				{color:#309000; font-size: smaller;}
+
+ 	#phasespacer 					{display:none;}
+
+	#fastspell1, #fastspell2, #fastspell3, #fastspell4, #fastspell5, #fastspell6, #fastspell7, #fastspell8, #fastspell9 { margin-top: -1px;}
+	#fastspell 					{margin: -10px 5px 0px 0px; }
+	#fastspell td 					{padding: 0px 5px 0px 0px;}
+
+	.frameitembg 					{ margin: 10px; margin-top: 1px; background-color: #DCDCDC; background-image: url(images/itembg.jpg); }
+	.frameitembg img[src$="item_divider.gif"] 	{margin-top: -5px;height: 9px;}
+
+/*Bilder verkleinern (Vote/Brief/Sieg/Niederlage) */
+	img[src$="brief.jpg"] 						{width: 100px; }
+	img[src$="sieg.jpg"] 						{ width: 50px; }
+	img[src$="niederlage.jpg"] 					{ width: 50px; }
+	img[src="http://voting.gdynamite.de/images/gd_animbutton.gif"] 	{width: 25px !important; }
+	img[src="http://www.gamessphere.de/img/graphics/vote.gif"] 	{width: 25px;}
+	img[src="http://www.freewar.de/images/vote.gif"] 		{width: 25px !important; }
+
+/*Cursor Fix*/
+	*[onclick] 		{ cursor: pointer; }
+
+/*Texteingabe größer: Modnachricht, Feuervogel, Post, Postvogel, Notizzettel...*/
+	.frameitembg textarea 	{ width: 100%; height: 50%;}
+	.framemainbg textarea	{ width: 100% !important; height: 70% !important; }
+
+/*Sponsorsterne*/
+	img[src$="sponsor.gif"] 	{ margin-right: 1px; }
+	img[src$="sponsor2.gif"] 	{ margin-right: 1px; }
+	img[src$="sponsor3.gif"]	{ margin-right: 1px; }
