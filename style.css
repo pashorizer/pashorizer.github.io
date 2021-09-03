@@ -135,7 +135,7 @@ p.listcaption 		{ border: 1px solid #A2A09F; font-weight: bold; padding: 1px; pa
 #listrow_defensep:before { content: "V: "; font-weight: bold; padding-left: 0px; }
 #listrow_defensew:after, #listrow_attackw:after, #listrow_ring:after { margin-right: 8px; }
 #listrow_ring:before{content: "F: "; font-weight: bold; padding-left: 0px}
-#listrow_special { background-color: transparent; border: medium none; display: block; overflow: hidden; position: absolute; right: 11px; margin-top: -80px; width: auto; }
+#listrow_special { background-color: transparent; border: medium none; display: block; overflow: hidden; position: absolute; right: 11px; margin-top: -85px; width: auto; }
 #listrow_special a[href*="special"] { height: 12px; width: 0px; color: transparent;  font-size: 0.001%!important;}
 #listrow_special a[href*="special"]:before { content: "Spezi"; color: #5092df!important; font-size: 12px; }
 #listrow_special a[href*="special"] span {border: 2px solid transparent!important;}
