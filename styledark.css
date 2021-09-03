@@ -336,6 +336,7 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
     .chattextglobal     {color: var(--chat_global);}
 	.chattextworldsay 	{ background-color: #C1CEF9; font-size: 13px; }
 	.chattextwhisper 	{ color: var(--chat_whisper); font-size: 13px; }
+    .chatfastnpcinfo {color: var(--chat_highlight) !important; }
 	.healthmed		{ color: #FF8000; }
 	.healthok 		{ color: var(--color_healthok); }
 	.healthcritical 	{ color: #ff7373; }
