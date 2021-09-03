@@ -3,13 +3,13 @@
 v1.0 
 
 KNOW ISSUES
-Chrome Browser: First listitemrow does not properly fit;
+Chrome Browser: listitemrow does not properly fit;
 ;
 */
 
 	p.listitemrow 							{ position: relative; padding: 2px 4px 3px 4px; font-size: 1px; color: transparent; border: 1px solid #BABABA; }
 	p.listitemrow:hover 						{ padding: 2px 65px 3px 4px; }
-	p.listitemrow + p 						{ margin-top: 3px; height: 11em; }
+	p.listitemrow + p 						{ margin-top: 3px }
 	p.listitemrow a[href*="action=activate"] 			{ display: block; height: 0px; margin: -2px 0px 0px 300px; }
 	p.listitemrow:hover a[href*="action=activate"]:before 		{ content: url(../images/act.png); position: absolute; top: 2px; right: 47px; opacity: 0.80; }
 	p.listitemrow:hover a[href*="action=activate"]:hover:before 	{ opacity: 1.00; }
