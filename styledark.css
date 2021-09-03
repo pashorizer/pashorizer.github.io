@@ -247,7 +247,7 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
 	.loginsubmit		{ width: 100%; font-size: 10px; }
 
 /* forms */
-	.input 			{ font-size: 11px; background-color: var(--area_bg); height: 17px; border: 1px solid var(--border); }
+	.input 			{ font-size: 11px; background-color: var(--area_bg); height: 17px; border: 1px solid var(--border); color: var(--global_font) }
 	textarea		{ font-size: 12px; background-color: var(--area_bg); border: 1px solid var(--border); color:var(--global_font) }
 	select 			{ font-size: 11px; background-color: #DBEBEF; }
 
