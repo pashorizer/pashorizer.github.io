@@ -12,22 +12,23 @@
 
 /* GLOBAL VARS */
 :root {
-    --primary: #546E7A;
-    --chat_bg: #455a64;
-    --area_bg: #607d8b;
-    --mainheader_bg: #78909c;
-    --chat_bg: #455a64;
-    --border: #608b84;
-    --global_font:#eaf9ff;
+    --primary: #373737;
+    --chat_bg: #2e2e2e;
+    --area_bg: #575757;
+    --mainheader_bg: #2e2e2e;
+    --border: #797979;
+    --global_font:#d6d6d6;
     --rbgcolor: #FFFFFF;
-    --linkcolor: #FF7373;
+    --linkcolor: #dd613b;
+    --chat_highlight: #b4d273;
     --chat_group: #FF962E;
     --chat_clan: #ff4e4de0;
-    --chat_scream: #00F2FF;
+    --chat_scream: #6a9dff;
     --chat_global: #FBEBAD;
     --chat_whisper: #00CF16;
     --chat_weather: #FFB400;
     --color_healthok: #73ff73;
+    --npc_highlight: #b4d273;
 }
 
 /* Shopgrafik */
@@ -246,15 +247,15 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
 	.loginsubmit		{ width: 100%; font-size: 10px; }
 
 /* forms */
-	.input 			{ font-size: 11px; background-color: #FFECD3; height: 17px; border: 1px solid #C85424; }
-	textarea		{ font-size: 12px; background-color: #FFECD3; border: 1px solid #C85424; }
+	.input 			{ font-size: 11px; background-color: var(--area_bg); height: 17px; border: 1px solid var(--border); }
+	textarea		{ font-size: 12px; background-color: var(--area_bg); border: 1px solid var(--border); color:var(--global_font) }
 	select 			{ font-size: 11px; background-color: #DBEBEF; }
 
 /* chat buttons */
 .submitsagen {
-    background-image: url("images/button_bg2.jpg");
-    border: 1px solid #777777;
-    color: #000000;
+    background-color: var(--area_bg);
+    border: 1px solid  var(--border);
+    color: #FFF;
     font-size: 11px;
     font-weight: bold;
     height: 17px;
@@ -264,9 +265,9 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
     width: 80px;
 }
 .submitclan {
-    background-image: url("images/button_bg2.jpg");
-    border: 1px solid #777777;
-    color: #D20000;
+    background-color: var(--area_bg);
+    border: 1px solid  var(--border);
+   color: var(--chat_clan);
     font-size: 11px;
     font-weight: bold;
     height: 17px;
@@ -276,9 +277,9 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
 }
 .chattextsynergieinspiration { font-style: italic; }
 .submitschreien {
-    background-image: url("images/button_bg2.jpg");
-    border: 1px solid #777777;
-    color: #004DA7;
+    background-color: var(--area_bg);
+    border: 1px solid  var(--border);
+    color: var(--chat_scream);
     font-size: 11px;
     font-weight: bold;
     height: 17px;
@@ -287,9 +288,9 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
     width: 87px;
 }
 .submitgroup {
-    background-image: url("images/button_bg2.jpg");
-    border: 1px solid #777777;
-    color: #E36B30;
+    background-color: var(--area_bg);
+    border: 1px solid  var(--border);
+    color: var(--chat_group);
     font-size: 11px;
     font-weight: bold;
     height: 17px;
@@ -298,9 +299,9 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
     width: 80px;
 }
 .submitwhisper {
-    background-image: url("../images/button_bg2.jpg");
-    border: 1px solid #777777;
-    color: #006600;
+    background-color: var(--area_bg);
+    border: 1px solid  var(--border);
+    color: var(--chat_whisper);
     font-size: 11px;
     font-weight: bold;
     height: 17px;
@@ -309,9 +310,9 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
     width: 88px;
 }
 .submitglobalchat 	{
-    background-image: url("images/button_bg2.jpg");
-    border: 1px solid #777777;
-    color: #6e621e;
+    background-color: var(--area_bg);
+    border: 1px solid  var(--border);
+    color: var(--chat_global);
     font-size: 11px;
     font-weight: bold;
     height: 17px;
@@ -328,7 +329,7 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
 /* text classes */
 	.chattext 		{ font-size: 13px; }
     .chattext > b {color: #FFF;}
-    .chattext > i > b {color: #FFAFAF !important; }
+    .chattext > i > b {color: var(--chat_highlight) !important; }
     .chattextgroup {color: var(--chat_group);}
 	.chattextscream		{ color: var(--chat_scream); font-size: 13px; }
 	.chattextclan 		{ color: var(--chat_clan); font-size: 13px; }
@@ -340,7 +341,9 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
 	.healthcritical 	{ color: #ff7373; }
 	.chatpics 		{ visibility: visible; }
 
-    p.worldsay table tr      { background-color: #1e9b1e; }
+    .listusersrow > b {color: var(--npc_highlight)}
+    p.worldsay tr[bgcolor="#99EE99"] td {color: black; background-color: #52a252}
+    p.worldsay tr[bgcolor="#C1CEF9"] td {color: black; background-color: #898b91}
 
 
 /* Wetter */
@@ -385,7 +388,7 @@ z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 1
 	p.personlistcaption 	{ font-weight: bold; padding: 1px;  }
 	p.itemlistcaption	{   font-weight: bold; padding: 1px;}
 	
-.listusersrow font[color="#0055AA"] {color: #73ffff;}
+/*.listusersrow font[color="#0055AA"] {color: #73ffff;}*/
 /* misc */
 	.borderbg 		{ background-color: #D0CFCF; }
 	img.nocango 		{ background: transparent;}
@@ -397,7 +400,7 @@ z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 1
 	td.c1 			{ text-align: left;}
 	.bold td		{ font-weight:bold;}
 	.friendlist 		{ border-collapse: collapse; }
-	.friendlist tr 		{ background-color: #ECE9E6; }
+	.friendlist tr 		{ background-color: var(--area_bg); }
 	.friendlist td 		{ padding: 3px; border-bottom: 1px solid #D6CBC2; }
 
 
