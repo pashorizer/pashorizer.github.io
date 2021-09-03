@@ -236,7 +236,7 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
 	.reallybrightbg		{ background-color: #FAFAFA; }
 	.whitebg		{ background-color: #FFFFFF; }
 	.blackbg 		{ background-color: #000000; }
-	.brownbg 		{ background-color: #E1D8D1; }
+	.brownbg 		{ background-color: var(--mainheader_bg); }
     .bg1            { background-color: var(--mainheader_bg) !important  ; }
 
 /* forms */
