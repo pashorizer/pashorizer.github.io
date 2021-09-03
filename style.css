@@ -141,6 +141,7 @@ p.listcaption 		{ border: 1px solid #A2A09F; font-weight: bold; padding: 1px; pa
 #listrow_special a[href="item.php?action=towercontrol"]:before { content: "Turm"; color: #5092df!important; font-size: 12px; }
 #listrow_special a[href="item.php?action=towercontrol"] span {border: 2px solid transparent!important;}
 
+#accessfast9 {font-size: 15px}
 
 /* BETTER SUNFIRE */
 /* Stylegenerator v 0.1 by sniGG */
