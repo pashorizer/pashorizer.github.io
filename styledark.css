@@ -340,7 +340,7 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
 	.healthcritical 	{ color: #ff7373; }
 	.chatpics 		{ visibility: visible; }
 
-    p.worldsay table tr      { background-color: var(--area_bg); }
+    p.worldsay table tr      { background-color: #1e9b1e; }
 
 
 /* Wetter */
