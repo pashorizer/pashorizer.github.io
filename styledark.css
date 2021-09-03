@@ -101,7 +101,7 @@
 	.valueincreased 	{ font-weight: bold; color: #ff0000; }
 	.itemamount 		{ font-weight: bold; color: var(--linkcolor); }
 	.itemequipped 		{ font-weight: bold; color: #ff0000; }
-	.itemmagic			{ font-weight: bold; color: var(--linkcolor); }
+	.itemmagic			{ font-weight: bold; color: green }
 	.magicextend		{ font-weight: bold; color: var(--color_healthok); }
 	.iteminventorypics 	{ visibility: visible; }
 
