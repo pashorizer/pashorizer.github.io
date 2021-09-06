@@ -546,7 +546,7 @@ border-bottom-right-radius: 20px;}
 /*normale */
 img[src*="npcs"] {
 margin-right: .2rem;
-background: white;
+background: #C4C4C4;
 border: 2px inset rgb(53, 53, 53)!important;
 border-top-left-radius: 20px;
 border-bottom-right-radius: 20px;}
