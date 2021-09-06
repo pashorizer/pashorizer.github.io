@@ -17,7 +17,7 @@
     --area_bg: #575757;
     --mainheader_bg: #2e2e2e;
     --border: #797979;
-    --global_font:#d6d6d6;
+    --global_font:#e7e9eb;
     --rbgcolor: #FFFFFF;
     --linkcolor: #dd613b;
     --chat_highlight: #b4d273;
@@ -199,7 +199,11 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
 
 /* global */
 	p,ul,ol,body:not(.framemapbg) div,td,span,layer,table,body	 
-				{ font-family: Arial, helvetica, sans-serif; font-size: 12px; color: var(--global_font); }
+				{   font-family: Arial, helvetica, sans-serif; 
+                    font-size: 0.775rem; 
+                    color: var(--global_font);
+                    font-weight:400
+                 }
 	p 			{ margin: 0px; padding: 0px; }
 
 /* body */
@@ -535,6 +539,14 @@ border-bottom-right-radius: 20px;
 /*normale */
 img[src$="spindel3.gif"] {
 background: rgba(255, 252, 89, 0.76)!important;
+border: 2px inset rgb(53, 53, 53)!important;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;}
+
+/*normale */
+img[src*="npcs"] {
+margin-right: .2rem;
+background: white;
 border: 2px inset rgb(53, 53, 53)!important;
 border-top-left-radius: 20px;
 border-bottom-right-radius: 20px;}
