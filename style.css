@@ -352,8 +352,8 @@ z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 1
 }
 
 /* main module */
-	.personlistcaption, .listusersrow {max-width: calc(90% + 50px + .5em); background-color: #3d3d3d;}
-	.itemlistcaption, .listplaceitemsrow {max-width: calc(90% + 40px + .5em); background-color: #3d3d3d;}
+	.personlistcaption, .listusersrow {max-width: calc(90% + 55px + .5em); background-color: #3d3d3d;}
+	.itemlistcaption, .listplaceitemsrow {max-width: calc(90% + 45px + .5em); background-color: #3d3d3d;}
 	p.personlistcaption 	{ border: 1px solid #A2A09F; font-weight: bold; padding: 1px; background-image: url(images/buttonblue_bg.jpg); }
 	p.itemlistcaption	{ border: 1px solid #A2A09F; font-weight: bold; padding: 1px; background-image: url(images/buttonorange_bg.jpg); }
 	
