@@ -1,0 +1,722 @@
+/**
+	My Copy-Paste-Fu is strong in this one. (@FWTools, @Alex, @Baum, @Mordino, @Teepflanze)
+    v1.0
+**/
+
+@import url("../cmp/status.css");
+@import url("../cmp/ans.css");
+@import url("../cmp/cnr.css");
+@import url("../cmp/smn.css");
+@import url("../cmp/cid.css");
+@import url("../cmp/saveheaven.css");
+
+/* GLOBAL VARS */
+:root {
+    --rbgcolor: #FFFFFF;
+}
+
+/* Shopgrafik */
+.framebannerbg:before {
+    top : 0px;
+    float:right;
+    content : url("https://freewar.zocker.eu/grafik.php") url("https://freewar.zocker.eu/xp.php?w=5&s=4&limit=3") url("https://freewar.zocker.eu/vvvg.php");
+    opacity : 1;
+}
+
+.framebannerbg { background: #585858 url(../images/bannerbg2.jpg) no-repeat top left; }
+.framebannerbg td[align="center"] { text-align: right; padding-bottom: 10px; padding-right: 10px; }
+
+.listusersrow .fastattack::after {
+    content: "\2694";
+    font-size: 30px;
+    position: absolute;
+    right: 5px;
+    background: var(--rbgcolor);
+    padding: 7px;
+    display: inline;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
+    padding: 5px;
+    border: 1px solid #2a2a2a;
+    border-right-color: rgb(42, 42, 42);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-radius: 5px 0px 0px 5px;
+    border-right: none;
+}
+.listusersrow .fastchase::after {
+    content: "\2691";
+    font-size: 30px;
+    position: absolute;
+    right: 60px;
+    background: var(--rbgcolor);
+    padding: 7px;
+    display: inline;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
+    padding: 5px;
+    border: 1px solid #2a2a2a;
+    border-right-color: rgb(42, 42, 42);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-radius: 5px 5px 5px 5px;
+}
+.listplaceitemsrow a::after {
+    content: "\2666";
+    font-size: 30px;
+    position: absolute;
+    right: 5px;
+    background: var(--rbgcolor);
+    display: inline;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
+    padding: 5px;
+    border: 1px solid #2a2a2a;
+    border-right-color: rgb(42, 42, 42);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-radius: 5px 0px 0px 5px;
+    border-right: none;
+}
+	.valueincreased 	{ font-weight: bold; color: #ff0000; }
+	.itemamount 		{ font-weight: bold; color: #751700; }
+	.itemequipped 		{ font-weight: bold; color: #ff0000; }
+	.itemmagic			{ font-weight: bold; color: red; }
+	.magicextend		{ font-weight: bold; color: #008800; }
+	.iteminventorypics 	{ visibility: visible; }
+
+p.listcaption 		{ border: 1px solid #A2A09F; font-weight: bold; padding: 1px; padding-left: 5px; margin-bottom: 3px; background-image: url(../images/button_bg.jpg)};
+#listrow_char_mission a:last-of-type, #listrow_aka_battlep b:last-of-type:not(:first-of-type) { color: transparent; font-size: 0.001%; }
+
+#listrow_aka_battlep b:first-of-type:not(:last-of-type) { display: inline-block; height: 10px; margin-right: 3px; overflow: hidden; width: 18px; }
+#listrow_aka_battlep b:last-of-type:not(:first-of-type):before { color: #acabab; content: "KP: "; font-size: 10px; font-weight: bold; margin-left:7px; }
+
+#listrow_char_mission { font-size: 11px; margin-top: -15px; position: absolute; right: 10px; }
+#listrow_char_mission a[href*="ability"] { height: 12px; width: 0px; color: transparent;  font-size: 0.001%!important; margin-top: 2px!important; }
+#listrow_char_mission a[href*="ability"]:before { content: "Charas "; color: #5092df!important; font-size: 12px; }
+#listrow_char_mission a[href*="ability"] span {border: 2px solid transparent!important; margin-top: -8px;}
+#listrow_char_mission a:last-of-type, #listrow_aka_battlep b:last-of-type:not(:first-of-type) { color: transparent; font-size: 0.001%; }
+#listrow_char_mission a:last-of-type:before { color: #5092df; content: "Auftrag"; font-size: 12px; padding-right: 5px; }
+
+#listrow_money { margin-top: -35px; margin-bottom: 17px; }
+#listrow_money > img { padding-right: 1000px; overflow: hidden; white-space: nowrap; }
+#listrow_money img[src$="icon_dropgold.gif"] 			{ display: none; }
+#listrow_money img[src$="transfergold.gif"] 			{ display: none; }
+#listrow_money.listrow text {content: "";}
+#listrow_money a[href*="action=moneydrop1"]:before 		{ content: url(../images/icon_drop.gif); left:-1010px; top:3px; position: relative }
+#listrow_money a[href*="action=moneytransfer1"]:after 		{ content: url(../images/icon_transfer.gif); left:-1008px; top:2px; position: relative  }
+#listrow_lifep:before { content: "LP: "; font-weight: bold; }
+#listrow_lifep {margin-top: 17px!important; margin-bottom: 4px }
+#listrow_lifep > b, #listrow_int > b, #listrow_attackp > b, #listrow_defensep > b, #listrow_ring > b { display: none; }
+#listrow_lifep.listrow span#itemlpdisp span.healthcritical {animation: opacity 2s ease-in-out infinite; opacity: 1; font-size: 14px;}
+#listrow_lifep.listrow span#itemlpdisp span.healthmed {animation: opacity 2s ease-in-out infinite; opacity: 1;  font-size: 14px;}
+
+#listrow_int:before { content: "Int: "; font-weight: bold; padding-left: 10px; }
+#listrow_int span { position: absolute; right: 11px; }
+#listrow_int span:after { color: #acabab; font-weight: bold; content: " Speed"; }
+#listrow_int { background-color: transparent; max-width: 0px!important; margin-top: -17px; text-align: right!important; }
+
+#listrow_neck {margin-top: 1px;}
+/* Charakter-Info verkürzen */
+.frameitembg p.listrow[id^="listrow_"]:not(#listrow_status) { white-space: nowrap; overflow: hidden; max-width: 260px; }
+.listrow 		{  background-color: #ECE9E6; padding-left:5px;}
+#listrow_attackp .valueincreased { padding-right: 1000px; }
+#listrow_attackp { padding-top: 4px; }
+#listrow_attackw , #listrow_defensew { right: 5px; font-size: 0px; font-weight: bold; background-color: transparent; margin-top: -17px; max-width: 200px; position: absolute; }
+#listrow_lifep > b, #listrow_int > b, #listrow_attackp > b, #listrow_defensep > b, #listrow_ring > b { display: none; }
+#listrow_attackw a {font-size: 0;}
+#listrow_attackw a:before {content: "A-Waffe"; font-size: 11px; margin-right: 6px}
+#listrow_attackp:before { content: "A: "; font-weight: bold; padding-left: 0px; }
+#listrow_defensew a {font-size: 0;}
+#listrow_defensew a:before {content: "V-Waffe"; font-size: 11px; margin-right: 6px}
+#listrow_defensep:before { content: "V: "; font-weight: bold; padding-left: 0px; }
+#listrow_defensew:after, #listrow_attackw:after, #listrow_ring:after { margin-right: 8px; }
+#listrow_ring:before{content: "F: "; font-weight: bold; padding-left: 0px}
+#listrow_special { background-color: transparent; border: medium none; display: block; overflow: hidden; position: absolute; right: 11px; top: 52px; width: auto; }
+#listrow_special a[href*="special"] { height: 12px; width: 0px; color: transparent;  font-size: 0.001%!important;}
+#listrow_special a[href*="special"]:before { content: "Spezi"; color: #5092df!important; font-size: 12px; }
+#listrow_special a[href*="special"] span {border: 2px solid transparent!important;}
+#listrow_special a[href="item.php?action=towercontrol"] { height: 12px; width: 0px; color: transparent;  font-size: 0.001%!important;}
+#listrow_special a[href="item.php?action=towercontrol"]:before { content: "Turm"; color: #5092df!important; font-size: 12px; }
+#listrow_special a[href="item.php?action=towercontrol"] span {border: 2px solid transparent!important;}
+
+a[href="item.php?action=lastfastspell"] {font-size: 12px}
+
+/* BETTER SUNFIRE */
+/* Stylegenerator v 0.1 by sniGG */
+/* http://www.fwwiki.de/index.php/Benutzer:Doran */
+
+/* Hilfe gibt es im Styleforum: http://forum.freewar.de/viewtopic.php?f=18&t=40823 */
+
+/* Besteht aus: */
+/* 1. Freewar.de StyleSheet Cold Sunfire v1.0 - (C) 2004 (Sotrax) */
+/* 2. Einigen Features aus dem "Kaspersky Style" -(isdrador) http://kstyle.infos.lc */
+/* 3. Den Runenpuzzle-�nderungen von Po1son*/
+/* 4. Diversen �nderungen von Latzhosentr�ger */
+/* 5. Diversen �nderungen von sniGG */
+
+/* Dank geht an alle, die Inhalte zur Verf�gung gestellt haben, insbesondere Sotrax und isdrador. */
+/* Auch bedanke ich mich bei allen, die tatkr�ftig geholfen haben. */
+
+/* Einige Inhalte dieses Styles werden mittlerweile von vielen anderen Styles �bernommen. Wenn jemand etwas �bernehmen will, muss er eine PN an Latzhosentr�ger schreiben. */
+
+
+
+/* global */
+	p,ul,ol,body:not(.framemapbg) div,td,span,layer,table,body	 
+				{ font-family: Arial, helvetica, sans-serif; font-size: 12px; color: #222222; }
+	p 			{ margin: 0px; padding: 0px; }
+
+/* body */
+	body 			{ background-color: #ffffff; margin: 0px; }
+
+/* table */
+	table 			{ border:0px; border-collapse: collapse; } /* cellspacing & cellpadding & border =0 no longer needed
+	td 			{ padding:0px; margin:0px; }
+
+/* scrollbars */
+/* body, textarea 		{ scrollbar-base-color:#BBBBBB; scrollbar-3dlight-color:#FFFFFF; scrollbar-arrow-color:#007F9F; scrollbar-darkshadow-color:#999999; scrollbar-face-color:#D5D5D5; scrollbar-highlight-color:#FFFFFF; scrollbar-shadow-color:#636363; scrollbar-track-color:#F5F5F5; } */
+
+/* links */
+	a:link 			{ color:#CC3300; text-decoration:none; font-weight:bold; }
+	a:visited 		{ color:#CC3300; text-decoration:none; font-weight:bold; }
+	a:active 		{ color:#FF3300; text-decoration:hover; font-weight:bold; }
+	a:hover 		{ color:#FF3300; text-decoration:underline; font-weight:bold; }
+
+/* fonts */
+	h1 			{ font-size:12px; font-weight:bold; margin-bottom: 0px;}
+	.medium 		{ font-size:11px; }
+	.small 			{ font-size:10px; }
+
+/* colors */
+	.fontcolor 		{ color: #555555; }
+	.white 			{ color: #ffffff; }
+
+/* bgcolors */
+	.body 			{ background-color: #FFFFFF; }
+	.divider 		{ background-color: #555555; }
+	.outline 		{ background-color: #999999; }
+	.menubg			{ background-color: #F1F1F1; }
+	.brightbg		{ background-color: #E5E5E5; }
+	.verybrightbg		{ background-color: #F1F1F1; }
+	.reallybrightbg		{ background-color: #FAFAFA; }
+	.whitebg		{ background-color: #FFFFFF; }
+	.blackbg 		{ background-color: #000000; }
+	.brownbg 		{ background-color: #E1D8D1; }
+
+/* forms */
+	.registerinput 	 	{ width: 100%; font-size: 10px; }
+	.registersubmit  	{ font-size: 10px; }
+	.logininput 	 	{ width: 100%; font-size: 10px; }
+	.loginsubmit		{ width: 100%; font-size: 10px; }
+
+/* forms */
+	.input 			{ font-size: 11px; background-color: #FFECD3; height: 17px; border: 1px solid #C85424; }
+	textarea		{ font-size: 12px; background-color: #FFECD3; border: 1px solid #C85424; }
+	select 			{ font-size: 11px; background-color: #DBEBEF; }
+
+/* chat buttons */
+.submitsagen {
+    background-image: url("../images/button_bg2.jpg");
+    border: 1px solid #777777;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    height: 17px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-bottom: 2px;
+    width: 80px;
+}
+.submitclan {
+    background-image: url("../images/button_bg2.jpg");
+    border: 1px solid #777777;
+    color: #D20000;
+    font-size: 11px;
+    font-weight: bold;
+    height: 17px;
+    margin-right: 2px;
+    padding-bottom: 2px;
+    width: 80px;
+}
+.chattextsynergieinspiration { font-style: italic; }
+.submitschreien {
+    background-image: url("../images/button_bg2.jpg");
+    border: 1px solid #777777;
+    color: #004DA7;
+    font-size: 11px;
+    font-weight: bold;
+    height: 17px;
+    margin-right: 2px;
+    padding-bottom: 2px;
+    width: 87px;
+}
+.submitgroup {
+    background-image: url("../images/button_bg2.jpg");
+    border: 1px solid #777777;
+    color: #E36B30;
+    font-size: 11px;
+    font-weight: bold;
+    height: 17px;
+    margin-right: 2px;
+    padding-bottom: 2px;
+    width: 80px;
+}
+.submitwhisper {
+    background-image: url("../images/button_bg2.jpg");
+    border: 1px solid #777777;
+    color: #006600;
+    font-size: 11px;
+    font-weight: bold;
+    height: 17px;
+    margin-right: 2px;
+    padding-bottom: 2px;
+    width: 88px;
+}
+.submitglobalchat 	{
+    background-image: url("../images/button_bg2.jpg");
+    border: 1px solid #777777;
+    color: #6e621e;
+    font-size: 11px;
+    font-weight: bold;
+    height: 17px;
+    margin-right: 2px;
+    padding-bottom: 2px;
+    width: 80px;
+}
+
+
+
+/* banner stuff */
+	.bannerad 		{ border: 1px solid #C85424; }
+
+/* text classes */
+	.chattext 		{ color: #000000; font-size: 13px; }
+	.chattextscream		{ color: #004DA7; font-size: 13px; }
+	.chattextclan 		{ color: #D20000; font-size: 13px; }
+	.chattextworldsay 	{ color: #000000; background-color: #C1CEF9; font-size: 13px; }
+	.chattextwhisper 	{ color: #006600; font-size: 13px; }
+	.healthmed		{ color: #FF8000; }
+	.healthok 		{ color: #309000; }
+	.healthcritical 	{ color: #D20000; }
+	.chatpics 		{ visibility: visible; }
+
+/* Wetter */
+	.chattextinfo 		{ color: #A37300; font-size: 13px; } 	/* normales Wetter */
+	.chattextinfo 		{ font-style: italic; }
+	.chattextinfo:before 	{ content: "Bemerkenswert: "; font-weight: bold; color: #A37300; } /* Bemerkenswertzeile - l�schen/rauskommentieren wenn unerw�nscht */
+
+
+
+	.framechatformbg 	{ background-color: #E7E7E7; }
+	.framechattextbg 	{ background-color: #F8F8F8; margin: 10px; margin-top: 5px; margin-bottom: 5px; margin-right: 5px; }
+	.framemainbg 		{ margin: 10px; background-image: url(../images/mainbg.jpg); background-repeat: repeat-y; background-position: right; }
+	.frameitembg 		{ margin: 10px; background-color: #DCDCDC; background-image: url(../images/itembg.jpg); }
+	.framemapbg 		{ margin: 10px; margin-top: 3px; background-color: #C1BDBA; background-image: url(../images/itembg.jpg); }
+	.framemenubg 		{ background-color: #C1BDBA; background-image: url(../images/itembg.jpg); }
+
+/* main module */
+	td.mainheader 		{ font-size: 35px; background-image: url(../images/headerbg.jpg); }
+	table.areadescription 	{ border: 1px solid #FFDAA9; background-color: #FFF8EF; width: 100%; }
+	td.areadescription 	{ padding: 0px; }
+	.imageborder 		{ border: 1px solid #C85424; background-color: #C85424; margin-right: 1px; margin-bottom: 1px;}
+	p.maincaption 		{ font-weight: bold; font-size: 30px; padding: 1px; padding-left: 1px; background-image: url(../images/headerbg.jpg); }
+	p.maincaption2 		{ font-weight: bold; font-size: 12px; padding: 1px; padding-left: 1px; background-image: url(../images/bluebg.jpg); }
+	p.maindesc1 		{ padding: 1px; padding-left: 1px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 1px; width: 300px; }
+	p.maindesc2 		{ border: 1px solid #FFDAA9; background-color: #FFF8EF; width: 100%; }
+	p.listplaceitemsrow 	{ padding: 1px; padding-left: 1px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 0px; overflow: hidden; }
+	p.listusersrow 		{ padding: 1px; padding-left: 1px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 0px; overflow: hidden; }
+
+/* item module */
+/*	p.listcaption 		{ border: 1px solid #A2A09F; font-weight: bold; padding: 1px; padding-left: 5px; background-image: url(images/button_bg.jpg); }
+	p.listsubcaption 	{ border-bottom: 1px solid #D6CBC2; }
+	p.listrow 		{ padding: 2px; padding-left: 5px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 0px; }
+	p.listitemrow 		{ padding: 2px; padding-left: 5px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 0px; border-top: 1px solid #D6CBC2; margin-bottom: 3px; }
+	p.listplaceitemsrow 	{ padding: 2px; padding-left: 5px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 0px; }
+	.valueincreased 	{ font-weight: bold; color: #ff0000; }
+	.itemamount 		{ font-weight: bold; color: #751700; }
+	.itemequipped 		{ font-weight: bold; color: #ff0000; }
+	.itemmagic 		{ font-weight: bold; color: #008800; }
+	.iteminventorypics 	{ visibility: visible; }*/
+
+/* map module */
+	p.positiontext 		{ background-color: #BBBBBB; border: 1px solid #555555; color: #000000; font-size: 10px; margin-left: 0px; margin-right: 0px; margin-bottom: 3px; padding-left: 0px; padding-right: 0px; width: 100%; }
+	
+	@charset iso-8859-1;
+
+.framemapbg td[id^="map"] a:after {
+z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 120%; font-size: 10px; font-weight: bold; text-align: center; color: #D20000; background: #CCCCCC; border-bottom: 1px solid #BABABA; opacity: 0.70; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px; -webkit-border-bottom-left-radius: 6px; -webkit-border-bottom-right-radius: 6px; 
+}
+
+/* main module */
+	.personlistcaption, .listusersrow {max-width: calc(90% + 55px + .5em); background-color: #3d3d3d;}
+	.itemlistcaption, .listplaceitemsrow {max-width: calc(90% + 45px + .5em); background-color: #3d3d3d;}
+	p.personlistcaption 	{ border: 1px solid #A2A09F; font-weight: bold; padding: 1px; background-image: url(../images/buttonblue_bg.jpg); }
+	p.itemlistcaption	{ border: 1px solid #A2A09F; font-weight: bold; padding: 1px; background-image: url(../images/buttonorange_bg.jpg); }
+	
+
+/* misc */
+	.borderbg 		{ background-color: #D0CFCF; }
+	img.nocango 		{ background: transparent;}
+	a.nocango 		{ background: #transparent; height: 50px; width: 50px; border-width: 0; display: block;}
+	a.nocango:hover 	{ background: url(../images/nocango.gif) top left no-repeat; cursor: default;}
+	.abilitymenu 		{ border:0px; border-collapse: collapse; }
+	.abilitymenu tr 	{ padding: 2px; padding-left: 5px; background-color: #ECE9E6; }
+	.abilitymenu td 	{ text-align: right; padding: 2px; padding-left: 5px; border: 1px solid #D6CBC2; }
+	td.c1 			{ text-align: left;}
+	.bold td		{ font-weight:bold;}
+	#plantrow 		{ border: 1px solid #A2A09F; font-weight: bold; padding: 2px; padding-left: 5px; background-image: url(../images/buttongreen_bg.jpg); }
+	.friendlist 		{ border-collapse: collapse; }
+	.friendlist tr 		{ background-color: #ECE9E6; }
+	.friendlist td 		{ padding: 3px; border-bottom: 1px solid #D6CBC2; }
+
+
+
+/* Einstellungen */
+	a[href*="profil.php?action=skip"]:before 	{ content: url(../images/check.png); padding-right: 2px; }
+	a[href*="profil.php?action=skip"]:hover 	{ color: #D20000 !important; }
+	a[href*="profil.php?action=show"]:before 	{ content: url(../images/cross.png); padding-right: 2px; }
+	a[href*="profil.php?action=show"]:hover 	{ color: #008800 !important; }
+	a[href*="profil.php?action=enable"]:before 	{ content: url(../images/cross.png); padding-right: 2px; }
+	a[href*="profil.php?action=enable"]:hover 	{ color: #008800 !important; }
+	form > input[name="ownstyle"] 			{ width: 100%; }
+
+/* Item-/Gelduebergabe */
+	.frameitembg a[href*="item.php?action=transfer2"] 	{ display: inline-block; margin: 0px 0px 5px 5px; }
+	.frameitembg a[href*="item.php?action=moneytransfer3"] 	{ display: inline-block; margin: 0px 0px 5px 5px; }
+
+
+
+/* Zust�nde blinken beim Auslaufen */
+	span[title*="(2 Minuten)"] { color:#D20000; text-decoration:blink;}
+	span[title*="(1 Minuten)"] { color:#D20000; text-decoration:blink; font-size: larger; font-weight: bold;}
+	span[title*="(0 Minuten)"] { color:#D20000; text-decoration:blink; font-size: larger; font-weight: bold;}
+
+
+
+
+
+/* Rassen der Clanmitglieder im Clanmenu */
+
+	.frameitembg *[title*="Mensch"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+	.frameitembg *[title*="Onlo"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+	.frameitembg *[title*="Natla"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+	.frameitembg *[title*="dunkler"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+	.frameitembg *[title*="Serum"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+	.frameitembg *[title*="Taruner"]:after 	{ display: block; content:" ("attr(title)")"; color:#000000; }
+
+
+/* Spezialworldsays ausblenden */
+
+    /* deaktivert am 22.01.2017 */
+
+	/* Gelb */
+	/*p.worldsay table tr[bgcolor="#FFDA47"] 		{ display:none; }
+	p.worldsay table tr[bgcolor="#FFDA47"] td	{ display:none; }*/
+
+	/* Pink */
+	/*p.worldsay table tr[bgcolor="#FFAEA1"] 		{ display:none; }
+	p.worldsay table tr[bgcolor="#FFAEA1"] td 	{ display:none; }*/
+
+	/* Orange */
+	/*p.worldsay table tr[bgcolor="#F8A370"] 		{ display:none; }
+	p.worldsay table tr[bgcolor="#F8A370"] td 	{ display:none; }*/
+
+/* Inventar-Platzschaffende �nderungen */
+	p.listcaption + p.listrow .small b + b 		{ margin: 0 0 0 -6px; }
+	p.listcaption + p.listrow .small b + b:before 	{ content: " | "; background: #ECE9E6; }
+
+	p.listcaption + p + p + p + p + p + p + p.listrow .valueincreased, p.listcaption + p + p + p + p + p + p + p + p.listrow .valueincreased, p.listcaption + p + p + p + p + p + p + p + p + p.listrow .valueincreased { display:inline-block; width:150px; }
+	p.listcaption + p + p + p + p + p + p + p.listrow, p.listcaption + p + p + p + p + p + p + p + p.listrow, p.listcaption + p + p + p + p + p + p + p + p +p.listrow { overflow:hidden; white-space:nowrap; }
+	
+	/* Modified by Cembon */
+	p[title~="Zustand:"] a { font-size: 0; }
+	p[title~="Zustand:"] a:before { content: "Waffe"; font-size: 12px; }	
+	
+	.valueincreased 				{color:#309000; font-size: smaller;}
+
+
+
+	#fastspell1, #fastspell2, #fastspell3, #fastspell4, #fastspell5, #fastspell6, #fastspell7, #fastspell8, #fastspell9 { margin-top: -1px;}
+	#fastspell 					{margin: -10px 5px 0px 0px; }
+	#fastspell td 					{padding: 0px 5px 0px 0px;}
+
+	.frameitembg 					{ margin: 10px; margin-top: 1px; background-color: #DCDCDC; background-image: url(../images/itembg.jpg); }
+	.frameitembg img[src$="item_divider.gif"] 	{margin-top: -5px;height: 9px;}
+
+/*Bilder verkleinern (Vote/Brief/Sieg/Niederlage) */
+	img[src$="brief.jpg"] 						{width: 100px; }
+	img[src$="sieg.jpg"] 						{ width: 50px; }
+	img[src$="niederlage.jpg"] 					{ width: 50px; }
+	img[src="http://voting.gdynamite.de/images/gd_animbutton.gif"] 	{width: 25px !important; }
+	img[src="http://www.gamessphere.de/img/graphics/vote.gif"] 	{width: 25px;}
+	img[src="http://www.freewar.de/images/vote.gif"] 		{width: 25px !important; }
+
+/*Cursor Fix*/
+	*[onclick] 		{ cursor: pointer; }
+
+/*Texteingabe gr��er: Modnachricht, Feuervogel, Post, Postvogel, Notizzettel...*/
+	.frameitembg textarea 	{ width: 100%; height: 50%;}
+	.framemainbg textarea	{ width: 100% !important; height: 70% !important; }
+
+/*Sponsorsterne*/
+	img[src$="sponsor.gif"] 	{ margin-right: 1px; }
+	img[src$="sponsor2.gif"] 	{ margin-right: 1px; }
+	img[src$="sponsor3.gif"]	{ margin-right: 1px; }
+    
+/* inv fix */
+.frameitembg{
+ overflow-x: hidden;
+ }
+ 
+ #listrow_int ~ p.listrow[title$="100%"] a::after {
+    position: absolute;
+    right: 20px;
+ }
+ 
+ .aggressivenpc {
+	color:#d00;
+	display:inline-block;
+	padding-right:3px
+}
+/* von Teepflanze geklaut */
+
+/*gigantische */
+img[src$="spindel.gif"] {
+background: rgba(255, 113, 113, 0.71) !important;
+border: 2px inset rgb(53, 53, 53)!important;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+
+/*klein */
+img[src$="spindel2.gif"] {
+background: rgba(127, 253, 103, 0.57) !important;
+border: 2px inset rgb(53, 53, 53)!important;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+
+/*normale */
+img[src$="spindel3.gif"] {
+background: rgba(255, 252, 89, 0.76)!important;
+border: 2px inset rgb(53, 53, 53)!important;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;}
+
+/* Waffenzustände*/
+p[title$=" 200%"]:after { content: " (200%)"; font-size: 10px; color: #acabab; }
+p[title$=" 199%"]:after { content: " (199%)"; font-size: 10px; color: #acabab; }
+p[title$=" 198%"]:after { content: " (198%)"; font-size: 10px; color: #acabab; }
+p[title$=" 197%"]:after { content: " (197%)"; font-size: 10px; color: #acabab; }
+p[title$=" 196%"]:after { content: " (196%)"; font-size: 10px; color: #acabab; }
+p[title$=" 195%"]:after { content: " (195%)"; font-size: 10px; color: #acabab; }
+p[title$=" 194%"]:after { content: " (194%)"; font-size: 10px; color: #acabab; }
+p[title$=" 193%"]:after { content: " (193%)"; font-size: 10px; color: #acabab; }
+p[title$=" 192%"]:after { content: " (192%)"; font-size: 10px; color: #acabab; }
+p[title$=" 191%"]:after { content: " (191%)"; font-size: 10px; color: #acabab; }
+p[title$=" 190%"]:after { content: " (190%)"; font-size: 10px; color: #acabab; }
+p[title$=" 189%"]:after { content: " (189%)"; font-size: 10px; color: #acabab; }
+p[title$=" 188%"]:after { content: " (188%)"; font-size: 10px; color: #acabab; }
+p[title$=" 187%"]:after { content: " (187%)"; font-size: 10px; color: #acabab; }
+p[title$=" 186%"]:after { content: " (186%)"; font-size: 10px; color: #acabab; }
+p[title$=" 185%"]:after { content: " (185%)"; font-size: 10px; color: #acabab; }
+p[title$=" 184%"]:after { content: " (184%)"; font-size: 10px; color: #acabab; }
+p[title$=" 183%"]:after { content: " (183%)"; font-size: 10px; color: #acabab; }
+p[title$=" 182%"]:after { content: " (182%)"; font-size: 10px; color: #acabab; }
+p[title$=" 181%"]:after { content: " (181%)"; font-size: 10px; color: #acabab; }
+p[title$=" 180%"]:after { content: " (180%)"; font-size: 10px; color: #acabab; }
+p[title$=" 179%"]:after { content: " (179%)"; font-size: 10px; color: #acabab; }
+p[title$=" 178%"]:after { content: " (178%)"; font-size: 10px; color: #acabab; }
+p[title$=" 177%"]:after { content: " (177%)"; font-size: 10px; color: #acabab; }
+p[title$=" 176%"]:after { content: " (176%)"; font-size: 10px; color: #acabab; }
+p[title$=" 175%"]:after { content: " (175%)"; font-size: 10px; color: #acabab; }
+p[title$=" 174%"]:after { content: " (174%)"; font-size: 10px; color: #acabab; }
+p[title$=" 173%"]:after { content: " (173%)"; font-size: 10px; color: #acabab; }
+p[title$=" 172%"]:after { content: " (172%)"; font-size: 10px; color: #acabab; }
+p[title$=" 171%"]:after { content: " (171%)"; font-size: 10px; color: #acabab; }
+p[title$=" 170%"]:after { content: " (170%)"; font-size: 10px; color: #acabab; }
+p[title$=" 169%"]:after { content: " (169%)"; font-size: 10px; color: #acabab; }
+p[title$=" 168%"]:after { content: " (168%)"; font-size: 10px; color: #acabab; }
+p[title$=" 167%"]:after { content: " (167%)"; font-size: 10px; color: #acabab; }
+p[title$=" 166%"]:after { content: " (166%)"; font-size: 10px; color: #acabab; }
+p[title$=" 165%"]:after { content: " (165%)"; font-size: 10px; color: #acabab; }
+p[title$=" 164%"]:after { content: " (164%)"; font-size: 10px; color: #acabab; }
+p[title$=" 163%"]:after { content: " (163%)"; font-size: 10px; color: #acabab; }
+p[title$=" 162%"]:after { content: " (162%)"; font-size: 10px; color: #acabab; }
+p[title$=" 161%"]:after { content: " (161%)"; font-size: 10px; color: #acabab; }
+p[title$=" 160%"]:after { content: " (160%)"; font-size: 10px; color: #acabab; }
+p[title$=" 159%"]:after { content: " (159%)"; font-size: 10px; color: #acabab; }
+p[title$=" 158%"]:after { content: " (158%)"; font-size: 10px; color: #acabab; }
+p[title$=" 157%"]:after { content: " (157%)"; font-size: 10px; color: #acabab; }
+p[title$=" 156%"]:after { content: " (156%)"; font-size: 10px; color: #acabab; }
+p[title$=" 155%"]:after { content: " (155%)"; font-size: 10px; color: #acabab; }
+p[title$=" 154%"]:after { content: " (154%)"; font-size: 10px; color: #acabab; }
+p[title$=" 153%"]:after { content: " (153%)"; font-size: 10px; color: #acabab; }
+p[title$=" 152%"]:after { content: " (152%)"; font-size: 10px; color: #acabab; }
+p[title$=" 151%"]:after { content: " (151%)"; font-size: 10px; color: #acabab; }
+p[title$=" 150%"]:after { content: " (150%)"; font-size: 10px; color: #acabab; }
+p[title$=" 149%"]:after { content: " (149%)"; font-size: 10px; color: #acabab; }
+p[title$=" 148%"]:after { content: " (148%)"; font-size: 10px; color: #acabab; }
+p[title$=" 147%"]:after { content: " (147%)"; font-size: 10px; color: #acabab; }
+p[title$=" 146%"]:after { content: " (146%)"; font-size: 10px; color: #acabab; }
+p[title$=" 145%"]:after { content: " (145%)"; font-size: 10px; color: #acabab; }
+p[title$=" 144%"]:after { content: " (144%)"; font-size: 10px; color: #acabab; }
+p[title$=" 143%"]:after { content: " (143%)"; font-size: 10px; color: #acabab; }
+p[title$=" 142%"]:after { content: " (142%)"; font-size: 10px; color: #acabab; }
+p[title$=" 141%"]:after { content: " (141%)"; font-size: 10px; color: #acabab; }
+p[title$=" 140%"]:after { content: " (140%)"; font-size: 10px; color: #acabab; }
+p[title$=" 139%"]:after { content: " (139%)"; font-size: 10px; color: #acabab; }
+p[title$=" 138%"]:after { content: " (138%)"; font-size: 10px; color: #acabab; }
+p[title$=" 137%"]:after { content: " (137%)"; font-size: 10px; color: #acabab; }
+p[title$=" 136%"]:after { content: " (136%)"; font-size: 10px; color: #acabab; }
+p[title$=" 135%"]:after { content: " (135%)"; font-size: 10px; color: #acabab; }
+p[title$=" 134%"]:after { content: " (134%)"; font-size: 10px; color: #acabab; }
+p[title$=" 133%"]:after { content: " (133%)"; font-size: 10px; color: #acabab; }
+p[title$=" 132%"]:after { content: " (132%)"; font-size: 10px; color: #acabab; }
+p[title$=" 131%"]:after { content: " (131%)"; font-size: 10px; color: #acabab; }
+p[title$=" 130%"]:after { content: " (130%)"; font-size: 10px; color: #acabab; }
+p[title$=" 129%"]:after { content: " (129%)"; font-size: 10px; color: #acabab; }
+p[title$=" 128%"]:after { content: " (128%)"; font-size: 10px; color: #acabab; }
+p[title$=" 127%"]:after { content: " (127%)"; font-size: 10px; color: #acabab; }
+p[title$=" 126%"]:after { content: " (126%)"; font-size: 10px; color: #acabab; }
+p[title$=" 125%"]:after { content: " (125%)"; font-size: 10px; color: #acabab; }
+p[title$=" 124%"]:after { content: " (124%)"; font-size: 10px; color: #acabab; }
+p[title$=" 123%"]:after { content: " (123%)"; font-size: 10px; color: #acabab; }
+p[title$=" 122%"]:after { content: " (122%)"; font-size: 10px; color: #acabab; }
+p[title$=" 121%"]:after { content: " (121%)"; font-size: 10px; color: #acabab; }
+p[title$=" 120%"]:after { content: " (120%)"; font-size: 10px; color: #acabab; }
+p[title$=" 119%"]:after { content: " (119%)"; font-size: 10px; color: #acabab; }
+p[title$=" 118%"]:after { content: " (118%)"; font-size: 10px; color: #acabab; }
+p[title$=" 117%"]:after { content: " (117%)"; font-size: 10px; color: #acabab; }
+p[title$=" 116%"]:after { content: " (116%)"; font-size: 10px; color: #acabab; }
+p[title$=" 115%"]:after { content: " (115%)"; font-size: 10px; color: #acabab; }
+p[title$=" 114%"]:after { content: " (114%)"; font-size: 10px; color: #acabab; }
+p[title$=" 113%"]:after { content: " (113%)"; font-size: 10px; color: #acabab; }
+p[title$=" 112%"]:after { content: " (112%)"; font-size: 10px; color: #acabab; }
+p[title$=" 111%"]:after { content: " (111%)"; font-size: 10px; color: #acabab; }
+p[title$=" 110%"]:after { content: " (110%)"; font-size: 10px; color: #acabab; }
+p[title$=" 109%"]:after { content: " (109%)"; font-size: 10px; color: #acabab; }
+p[title$=" 108%"]:after { content: " (108%)"; font-size: 10px; color: #acabab; }
+p[title$=" 107%"]:after { content: " (107%)"; font-size: 10px; color: #acabab; }
+p[title$=" 106%"]:after { content: " (106%)"; font-size: 10px; color: #acabab; }
+p[title$=" 105%"]:after { content: " (105%)"; font-size: 10px; color: #acabab; }
+p[title$=" 104%"]:after { content: " (104%)"; font-size: 10px; color: #acabab; }
+p[title$=" 103%"]:after { content: " (103%)"; font-size: 10px; color: #acabab; }
+p[title$=" 102%"]:after { content: " (102%)"; font-size: 10px; color: #acabab; }
+p[title$=" 101%"]:after { content: " (101%)"; font-size: 10px; color: #acabab; }
+p[title$=" 100%"]:after { content: " (100%)"; font-size: 10px; color: #acabab; }
+p[title$=" 99%"]:after { content: " (99%)"; font-size: 10px; color: #acabab; }
+p[title$=" 98%"]:after { content: " (98%)"; font-size: 10px; color: #acabab; }
+p[title$=" 97%"]:after { content: " (97%)"; font-size: 10px; color: #acabab; }
+p[title$=" 96%"]:after { content: " (96%)"; font-size: 10px; color: #acabab; }
+p[title$=" 95%"]:after { content: " (95%)"; font-size: 10px; color: #acabab; }
+p[title$=" 94%"]:after { content: " (94%)"; font-size: 10px; color: #acabab; }
+p[title$=" 93%"]:after { content: " (93%)"; font-size: 10px; color: #acabab; }
+p[title$=" 92%"]:after { content: " (92%)"; font-size: 10px; color: #acabab; }
+p[title$=" 91%"]:after { content: " (91%)"; font-size: 10px; color: #acabab; }
+p[title$=" 90%"]:after { content: " (90%)"; font-size: 10px; color: #acabab; }
+p[title$=" 89%"]:after { content: " (89%)"; font-size: 10px; color: #acabab; }
+p[title$=" 88%"]:after { content: " (88%)"; font-size: 10px; color: #acabab; }
+p[title$=" 87%"]:after { content: " (87%)"; font-size: 10px; color: #acabab; }
+p[title$=" 86%"]:after { content: " (86%)"; font-size: 10px; color: #acabab; }
+p[title$=" 85%"]:after { content: " (85%)"; font-size: 10px; color: #acabab; }
+p[title$=" 84%"]:after { content: " (84%)"; font-size: 10px; color: #acabab; }
+p[title$=" 83%"]:after { content: " (83%)"; font-size: 10px; color: #acabab; }
+p[title$=" 82%"]:after { content: " (82%)"; font-size: 10px; color: #acabab; }
+p[title$=" 81%"]:after { content: " (81%)"; font-size: 10px; color: #acabab; }
+p[title$=" 80%"]:after { content: " (80%)"; font-size: 10px; color: #acabab; }
+p[title$=" 79%"]:after { content: " (79%)"; font-size: 10px; color: #acabab; }
+p[title$=" 78%"]:after { content: " (78%)"; font-size: 10px; color: #acabab; }
+p[title$=" 77%"]:after { content: " (77%)"; font-size: 10px; color: #acabab; }
+p[title$=" 76%"]:after { content: " (76%)"; font-size: 10px; color: #acabab; }
+p[title$=" 75%"]:after { content: " (75%)"; font-size: 10px; color: #acabab; }
+p[title$=" 74%"]:after { content: " (74%)"; font-size: 10px; color: #acabab; }
+p[title$=" 73%"]:after { content: " (73%)"; font-size: 10px; color: #acabab; }
+p[title$=" 72%"]:after { content: " (72%)"; font-size: 10px; color: #acabab; }
+p[title$=" 71%"]:after { content: " (71%)"; font-size: 10px; color: #acabab; }
+p[title$=" 70%"]:after { content: " (70%)"; font-size: 10px; color: #acabab; }
+p[title$=" 69%"]:after { content: " (69%)"; font-size: 10px; color: #acabab; }
+p[title$=" 68%"]:after { content: " (68%)"; font-size: 10px; color: #acabab; }
+p[title$=" 67%"]:after { content: " (67%)"; font-size: 10px; color: #acabab; }
+p[title$=" 66%"]:after { content: " (66%)"; font-size: 10px; color: #acabab; }
+p[title$=" 65%"]:after { content: " (65%)"; font-size: 10px; color: #acabab; }
+p[title$=" 64%"]:after { content: " (64%)"; font-size: 10px; color: #acabab; }
+p[title$=" 63%"]:after { content: " (63%)"; font-size: 10px; color: #acabab; }
+p[title$=" 62%"]:after { content: " (62%)"; font-size: 10px; color: #acabab; }
+p[title$=" 61%"]:after { content: " (61%)"; font-size: 10px; color: #acabab; }
+p[title$=" 60%"]:after { content: " (60%)"; font-size: 10px; color: #acabab; }
+p[title$=" 59%"]:after { content: " (59%)"; font-size: 10px; color: #acabab; }
+p[title$=" 58%"]:after { content: " (58%)"; font-size: 10px; color: #acabab; }
+p[title$=" 57%"]:after { content: " (57%)"; font-size: 10px; color: #acabab; }
+p[title$=" 56%"]:after { content: " (56%)"; font-size: 10px; color: #acabab; }
+p[title$=" 55%"]:after { content: " (55%)"; font-size: 10px; color: #acabab; }
+p[title$=" 54%"]:after { content: " (54%)"; font-size: 10px; color: #acabab; }
+p[title$=" 53%"]:after { content: " (53%)"; font-size: 10px; color: #acabab; }
+p[title$=" 52%"]:after { content: " (52%)"; font-size: 10px; color: #acabab; }
+p[title$=" 51%"]:after { content: " (51%)"; font-size: 10px; color: #acabab; }
+p[title$=" 50%"]:after { content: " (50%)"; font-size: 10px; color: #acabab; }
+p[title$=" 49%"]:after { content: " (49%)"; font-size: 10px; color: #acabab; }
+p[title$=" 48%"]:after { content: " (48%)"; font-size: 10px; color: #acabab; }
+p[title$=" 47%"]:after { content: " (47%)"; font-size: 10px; color: #acabab; }
+p[title$=" 46%"]:after { content: " (46%)"; font-size: 10px; color: #acabab; }
+p[title$=" 45%"]:after { content: " (45%)"; font-size: 10px; color: #acabab; }
+p[title$=" 44%"]:after { content: " (44%)"; font-size: 10px; color: #acabab; }
+p[title$=" 43%"]:after { content: " (43%)"; font-size: 10px; color: #acabab; }
+p[title$=" 42%"]:after { content: " (42%)"; font-size: 10px; color: #acabab; }
+p[title$=" 41%"]:after { content: " (41%)"; font-size: 10px; color: #acabab; }
+p[title$=" 40%"]:after { content: " (40%)"; font-size: 10px; color: #acabab; }
+p[title$=" 39%"]:after { content: " (39%)"; font-size: 10px; color: #acabab; }
+p[title$=" 38%"]:after { content: " (38%)"; font-size: 10px; color: #acabab; }
+p[title$=" 37%"]:after { content: " (37%)"; font-size: 10px; color: #acabab; }
+p[title$=" 36%"]:after { content: " (36%)"; font-size: 10px; color: #acabab; }
+p[title$=" 35%"]:after { content: " (35%)"; font-size: 10px; color: #acabab; }
+p[title$=" 34%"]:after { content: " (34%)"; font-size: 10px; color: #acabab; }
+p[title$=" 33%"]:after { content: " (33%)"; font-size: 10px; color: #acabab; }
+p[title$=" 32%"]:after { content: " (32%)"; font-size: 10px; color: #acabab; }
+p[title$=" 31%"]:after { content: " (31%)"; font-size: 10px; color: #acabab; }
+p[title$=" 30%"]:after { content: " (30%)"; font-size: 10px; color: #acabab; }
+p[title$=" 29%"]:after { content: " (29%)"; font-size: 10px; color: #acabab; }
+p[title$=" 28%"]:after { content: " (28%)"; font-size: 10px; color: #acabab; }
+p[title$=" 27%"]:after { content: " (27%)"; font-size: 10px; color: #acabab; }
+p[title$=" 26%"]:after { content: " (26%)"; font-size: 10px; color: #acabab; }
+p[title$=" 25%"]:after { content: " (25%)"; font-size: 10px; color: #acabab; }
+p[title$=" 24%"]:after { content: " (24%)"; font-size: 10px; color: #acabab; }
+p[title$=" 23%"]:after { content: " (23%)"; font-size: 10px; color: #acabab; }
+p[title$=" 22%"]:after { content: " (22%)"; font-size: 10px; color: #acabab; }
+p[title$=" 21%"]:after { content: " (21%)"; font-size: 10px; color: #acabab; }
+p[title$=" 20%"]:after { content: " (20%)"; font-size: 10px; color: #acabab; }
+p[title$=" 19%"]:after { content: " (19%)"; font-size: 10px; color: #acabab; }
+p[title$=" 18%"]:after { content: " (18%)"; font-size: 10px; color: #acabab; }
+p[title$=" 17%"]:after { content: " (17%)"; font-size: 10px; color: #acabab; }
+p[title$=" 16%"]:after { content: " (16%)"; font-size: 10px; color: #acabab; }
+p[title$=" 15%"]:after { content: " (15%)"; font-size: 10px; color: #acabab; }
+p[title$=" 14%"]:after { content: " (14%)"; font-size: 10px; color: #acabab; }
+p[title$=" 13%"]:after { content: " (13%)"; font-size: 10px; color: #acabab; }
+p[title$=" 12%"]:after { content: " (12%)"; font-size: 10px; color: #acabab; }
+p[title$=" 11%"]:after { content: " (11%)"; font-size: 10px; color: #acabab; }
+p[title$=" 10%"]:after { content: " (10%)"; font-size: 10px; color: #acabab; }
+p[title$=" 9%"]:after { content: " (9%)"; font-size: 10px; color: #acabab; }
+p[title$=" 8%"]:after { content: " (8%)"; font-size: 10px; color: #acabab; }
+p[title$=" 7%"]:after { content: " (7%)"; color: #ff6f6f; font-size: 10px; }
+p[title$=" 6%"]:after { content: " (6%)"; color: #ff6f6f; font-size: 10px; }
+p[title$=" 5%"]:after { content: " (5%)"; animation: opacity 2s ease-in-out infinite; opacity: 1; color: #f00; font-size: 16px; }
+p[title$=" 4%"]:after { content: " (4%)"; animation: opacity 2s ease-in-out infinite; opacity: 1; color: #f00; font-size: 16px; }
+p[title$=" 3%"]:after { content: " (REPAIR)";  animation: opacity 2s ease-in-out infinite; opacity: 1; color: #f00; font-size: 16px; }
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
