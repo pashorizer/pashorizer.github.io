@@ -3,12 +3,12 @@
     v1.0
 **/
 
-@import url("./cmp/status.css");
-@import url("./cmp/ans.css");
-@import url("./cmp/cnr.css");
-@import url("./cmp/smn.css");
-@import url("./cmp/cid.css");
-@import url("./cmp/saveheaven.css");
+@import url("../cmp/status.css");
+@import url("../cmp/ans.css");
+@import url("../cmp/cnr.css");
+@import url("../cmp/smn.css");
+@import url("../cmp/cid.css");
+@import url("../cmp/saveheaven.css");
 
 /* GLOBAL VARS */
 :root {
