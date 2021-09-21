@@ -399,7 +399,7 @@ z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 1
 	.borderbg 		{ background-color: #D0CFCF; }
 	img.nocango 		{ background: transparent;}
 	a.nocango 		{ background: #transparent; height: 50px; width: 50px; border-width: 0; display: block;}
-	a.nocango:hover 	{ background: url(images/nocango.gif) top left no-repeat; cursor: default;}
+	a.nocango:hover 	{ background: url(../images/nocango.gif) top left no-repeat; cursor: default;}
 	.abilitymenu 		{ border:0px; border-collapse: collapse; }
 	.abilitymenu tr 	{ padding: 2px; padding-left: 5px; }
 	.abilitymenu td 	{ text-align: right; padding: 2px; padding-left: 5px; border: 1px solid var(--border); }
@@ -412,11 +412,11 @@ z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 1
 
 
 /* Einstellungen */
-	a[href*="profil.php?action=skip"]:before 	{ content: url(images/check.png); padding-right: 2px; }
+	a[href*="profil.php?action=skip"]:before 	{ content: url(../images/check.png); padding-right: 2px; }
 	a[href*="profil.php?action=skip"]:hover 	{ color: #D20000 !important; }
-	a[href*="profil.php?action=show"]:before 	{ content: url(images/cross.png); padding-right: 2px; }
+	a[href*="profil.php?action=show"]:before 	{ content: url(../images/cross.png); padding-right: 2px; }
 	a[href*="profil.php?action=show"]:hover 	{ color: #008800 !important; }
-	a[href*="profil.php?action=enable"]:before 	{ content: url(images/cross.png); padding-right: 2px; }
+	a[href*="profil.php?action=enable"]:before 	{ content: url(../images/cross.png); padding-right: 2px; }
 	a[href*="profil.php?action=enable"]:hover 	{ color: #008800 !important; }
 	form > input[name="ownstyle"] 			{ width: 100%; }
 
