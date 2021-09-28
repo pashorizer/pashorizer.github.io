@@ -81,6 +81,91 @@
     border-radius: 5px 0px 0px 5px;
     border-right: none;
 }
+
+/* goldadern, evt. matched der auch was anderes.. test (yolo) */
+.listusersrow a[href*="npc_active"]::after {
+    content: "\2692";
+    font-size: 30px;
+    position: absolute;
+    right: 5px;
+    background: var(--rbgcolor);
+    padding: 7px;
+    display: inline;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
+    padding: 5px;
+    border: 1px solid #2a2a2a;
+    border-right-color: rgb(42, 42, 42);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+/* Mäuse und Knochen */
+.areadescription a[href*="unten310b"]::after, a[href*="unten244"]::after, a[href*="drinkwater"]::after {
+    content: "\2766" !important;
+    font-size: 30px;
+    position: absolute;
+    right: 5px;
+    background: var(--rbgcolor);
+    padding: 7px;
+    display: inline;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
+    padding: 5px;
+    border: 1px solid #2a2a2a;
+    border-right-color: rgb(42, 42, 42);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-radius: 5px 0px 0px 5px;
+    border-right: none;
+}
+
+/* Dungeons, evt. matched der auch was anderes.. test (yolo) */
+.areadescription a[href*="unten"]::after, a[href*="oben"]::after, a[href*="casino2"]::after, a[href*="betreten"]::after, a[href*="rausgehen"]::after {
+    content: "\2616";
+    font-size: 30px;
+    position: absolute;
+    right: 5px;
+    background: var(--rbgcolor);
+    padding: 7px;
+    display: inline;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
+    padding: 5px;
+    border: 1px solid #2a2a2a;
+    border-right-color: rgb(42, 42, 42);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-radius: 5px 0px 0px 5px;
+    border-right: none;
+}
+
+/* Back Buttons*/
+.areadescription a[href="main.php"]::after, a[href*="msg_isreport"]::after {
+    content: "\2716";
+    font-size: 30px;
+    position: absolute;
+    right: 5px;
+    background: var(--rbgcolor);
+    padding: 7px;
+    display: inline;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
+    padding: 5px;
+    border: 1px solid #2a2a2a;
+    border-right-color: rgb(42, 42, 42);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-radius: 5px 0px 0px 5px;
+    border-right: none;
+}
+
 	.valueincreased 	{ font-weight: bold; color: #ff0000; }
 	.itemamount 		{ font-weight: bold; color: #751700; }
 	.itemequipped 		{ font-weight: bold; color: #ff0000; }
