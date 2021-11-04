@@ -379,6 +379,9 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
 	.bannerad 		{ border: 1px solid #C85424; }
 
 /* text classes */
+    .chattextsynergieinspiration { font-style: italic !important; }
+    .chattextinspiration    { font-style: normal; color: gray }
+    .chattextinspiration > b { color: #CE5A21}
 	.chattext 		{ color: #000000; font-size: 13px; }
 	.chattextscream		{ color: #004DA7; font-size: 13px; }
 	.chattextclan 		{ color: #D20000; font-size: 13px; }
@@ -388,9 +391,6 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
 	.healthok 		{ color: #309000; }
 	.healthcritical 	{ color: #D20000; }
 	.chatpics 		{ visibility: visible; }
-	.chattextsynergieinspiration { font-style: italic !important; }
-	.chattextinspiration 	{ font-style: normal; color: gray }
-	.chattextinspiration > b { color: #CE5A21}
 
 /* Wetter */
 	.chattextinfo 		{ color: #A37300; font-size: 13px; } 	/* normales Wetter */

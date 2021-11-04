@@ -365,7 +365,6 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
     padding-bottom: 2px;
     width: 80px;
 }
-.chattextsynergieinspiration { font-style: italic; }
 .submitschreien {
     background-color: var(--area_bg);
     border: 1px solid  var(--border);
@@ -417,6 +416,10 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
 	.bannerad 		{ border: 1px solid #C85424; }
 
 /* text classes */
+    .chattextsynergieinspiration { font-style: italic !important; }
+    .chattextinspiration    { font-style: normal; color: #848484 !important }
+    .chattextinspiration > b { color: var(--chat_group)}
+    .chattime {color: var(--global_font) !important;}
 	.chattext 		{ font-size: 13px; }
     .chattext > b {color: #FFF;}
     .chattext > i > b {color: var(--chat_highlight) !important; }
