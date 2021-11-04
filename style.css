@@ -327,7 +327,7 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
     padding-bottom: 2px;
     width: 80px;
 }
-.chattextsynergieinspiration { font-style: italic; }
+
 .submitschreien {
     background-image: url("images/button_bg2.jpg");
     border: 1px solid #777777;
@@ -388,6 +388,9 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
 	.healthok 		{ color: #309000; }
 	.healthcritical 	{ color: #D20000; }
 	.chatpics 		{ visibility: visible; }
+	.chattextsynergieinspiration { font-style: italic; color: gray }
+	.chattextinspiration 	{ font-style: normal; color: gray }
+	.chattextinspiration > b { color: #CE5A21}
 
 /* Wetter */
 	.chattextinfo 		{ color: #A37300; font-size: 13px; } 	/* normales Wetter */
