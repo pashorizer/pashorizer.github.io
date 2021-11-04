@@ -388,7 +388,7 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
 	.healthok 		{ color: #309000; }
 	.healthcritical 	{ color: #D20000; }
 	.chatpics 		{ visibility: visible; }
-	.chattextsynergieinspiration { font-style: italic; color: gray }
+	.chattextsynergieinspiration { font-style: italic !important; }
 	.chattextinspiration 	{ font-style: normal; color: gray }
 	.chattextinspiration > b { color: #CE5A21}
 
