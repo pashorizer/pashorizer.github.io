@@ -439,6 +439,7 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
     .areadescription > b {color: var(--npc_highlight)}
     p.worldsay tr[bgcolor="#99EE99"] td {color: black; background-color: #52a252}
     p.worldsay tr[bgcolor="#C1CEF9"] td {color: black; background-color: #898b91}
+    p.worldsay tr[bgcolor="#EEEE99"] td {color: black; background-color: #e14d4d}
 
 
 /* Wetter */
