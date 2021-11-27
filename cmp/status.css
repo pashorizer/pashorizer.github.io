@@ -48,7 +48,7 @@
 #listrow_status span[title^='Südpolarisierung ']:before {content: "SP |"; font-weight: bold; font-size: 10px;}
 #listrow_status span[title^='Westpolarisierung ']:before {content: "WP |"; font-weight: bold; font-size: 10px;}
 
-#listrow_status span[title^='Schokolade']:before {content: "☘ |"; font-weight: bold; font-size: 10px;}
+#listrow_status span[title^='weiße Schokolade']:before {content: "☘ |"; font-weight: bold; font-size: 10px;}
 #listrow_status span[title^='Birnenbrand']:before {content: "⛐ |"; font-weight: bold; font-size: 10px;}
 #listrow_status span[title^='Nebelschwaden']:before {content: "☁ |"; font-weight: bold; font-size: 10px;}
 #listrow_status span[title^='Pflanzensicht']:before {content: "⚘ |"; font-weight: bold; font-size: 10px;}
