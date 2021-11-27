@@ -9,7 +9,7 @@
 @import url("../cmp/smn.css");
 @import url("../cmp/cid.css");
 @import url("../cmp/saveheaven.css");
-@import url("./cmp/general.css");
+@import url("../cmp/general.css");
 /* Shopgrafik */
 .framebannerbg:before {
     top : 0px;

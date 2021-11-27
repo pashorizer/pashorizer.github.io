@@ -3,7 +3,7 @@
     --rbgcolor: #FFFFFF;
 }
 
-.framebannerbg { background: #585858 url(images/bannerbg2.jpg) no-repeat top left; }
+.framebannerbg { background: #585858 url(../images/bannerbg2.jpg) no-repeat top left; }
 .framebannerbg td[align="center"] { text-align: right; padding-bottom: 10px; padding-right: 10px; }
 
 .listusersrow .fastattack::after {
@@ -153,7 +153,7 @@
     .magicextend        { font-weight: bold; color: #008800; }
     .iteminventorypics  { visibility: visible; }
 
-p.listcaption       { border: 1px solid #A2A09F; font-weight: bold; padding: 1px; padding-left: 5px; margin-bottom: 3px; background-image: url(images/button_bg.jpg)};
+p.listcaption       { border: 1px solid #A2A09F; font-weight: bold; padding: 1px; padding-left: 5px; margin-bottom: 3px; background-image: url(../images/button_bg.jpg)};
 #listrow_char_mission a:last-of-type, #listrow_aka_battlep b:last-of-type:not(:first-of-type) { color: transparent; font-size: 0.001%; }
 
 #listrow_aka_battlep b:first-of-type:not(:last-of-type) { display: inline-block; height: 10px; margin-right: 3px; overflow: hidden; width: 18px; }
@@ -381,25 +381,25 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
 
     .framechatformbg    { background-color: #E7E7E7; }
     .framechattextbg    { background-color: #F8F8F8; margin: 10px; margin-top: 5px; margin-bottom: 5px; margin-right: 5px; }
-    .framemainbg        { margin: 10px; background-image: url(images/mainbg.jpg); background-repeat: repeat-y; background-position: right; }
-    .frameitembg        { margin: 10px; background-color: #DCDCDC; background-image: url(images/itembg.jpg); }
-    .framemapbg         { margin: 10px; margin-top: 3px; background-color: #C1BDBA; background-image: url(images/itembg.jpg); }
-    .framemenubg        { background-color: #C1BDBA; background-image: url(images/itembg.jpg); }
+    .framemainbg        { margin: 10px; background-image: url(../images/mainbg.jpg); background-repeat: repeat-y; background-position: right; }
+    .frameitembg        { margin: 10px; background-color: #DCDCDC; background-image: url(../images/itembg.jpg); }
+    .framemapbg         { margin: 10px; margin-top: 3px; background-color: #C1BDBA; background-image: url(../images/itembg.jpg); }
+    .framemenubg        { background-color: #C1BDBA; background-image: url(../images/itembg.jpg); }
 
 /* main module */
-    td.mainheader       { font-size: 35px; background-image: url(images/headerbg.jpg); }
+    td.mainheader       { font-size: 35px; background-image: url(../images/headerbg.jpg); }
     table.areadescription   { border: 1px solid #FFDAA9; background-color: #FFF8EF; width: 100%; }
     td.areadescription  { padding: 0px; }
     .imageborder        { border: 1px solid #C85424; background-color: #C85424; margin-right: 1px; margin-bottom: 1px;}
-    p.maincaption       { font-weight: bold; font-size: 30px; padding: 1px; padding-left: 1px; background-image: url(images/headerbg.jpg); }
-    p.maincaption2      { font-weight: bold; font-size: 12px; padding: 1px; padding-left: 1px; background-image: url(images/bluebg.jpg); }
+    p.maincaption       { font-weight: bold; font-size: 30px; padding: 1px; padding-left: 1px; background-image: url(../images/headerbg.jpg); }
+    p.maincaption2      { font-weight: bold; font-size: 12px; padding: 1px; padding-left: 1px; background-image: url(../images/bluebg.jpg); }
     p.maindesc1         { padding: 1px; padding-left: 1px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 1px; width: 300px; }
     p.maindesc2         { border: 1px solid #FFDAA9; background-color: #FFF8EF; width: 100%; }
     p.listplaceitemsrow     { padding: 1px; padding-left: 1px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 0px; overflow: hidden; }
     p.listusersrow      { padding: 1px; padding-left: 1px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 0px; overflow: hidden; }
 
 /* item module */
-/*  p.listcaption       { border: 1px solid #A2A09F; font-weight: bold; padding: 1px; padding-left: 5px; background-image: url(images/button_bg.jpg); }
+/*  p.listcaption       { border: 1px solid #A2A09F; font-weight: bold; padding: 1px; padding-left: 5px; background-image: url(../images/button_bg.jpg); }
     p.listsubcaption    { border-bottom: 1px solid #D6CBC2; }
     p.listrow       { padding: 2px; padding-left: 5px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 0px; }
     p.listitemrow       { padding: 2px; padding-left: 5px; background-color: #ECE9E6; border: 1px solid #D6CBC2; border-top: 0px; border-top: 1px solid #D6CBC2; margin-bottom: 3px; }
@@ -422,21 +422,21 @@ z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 1
 /* main module */
     .personlistcaption, .listusersrow {max-width: calc(90% + 55px + .5em); background-color: #3d3d3d;}
     .itemlistcaption, .listplaceitemsrow {max-width: calc(90% + 45px + .5em); background-color: #3d3d3d;}
-    p.personlistcaption     { border: 1px solid #A2A09F; font-weight: bold; padding: 1px; background-image: url(images/buttonblue_bg.jpg); }
-    p.itemlistcaption   { border: 1px solid #A2A09F; font-weight: bold; padding: 1px; background-image: url(images/buttonorange_bg.jpg); }
+    p.personlistcaption     { border: 1px solid #A2A09F; font-weight: bold; padding: 1px; background-image: url(../images/buttonblue_bg.jpg); }
+    p.itemlistcaption   { border: 1px solid #A2A09F; font-weight: bold; padding: 1px; background-image: url(../images/buttonorange_bg.jpg); }
     
 
 /* misc */
     .borderbg       { background-color: #D0CFCF; }
     img.nocango         { background: transparent;}
     a.nocango       { background: #transparent; height: 50px; width: 50px; border-width: 0; display: block;}
-    a.nocango:hover     { background: url(images/nocango.gif) top left no-repeat; cursor: default;}
+    a.nocango:hover     { background: url(../images/nocango.gif) top left no-repeat; cursor: default;}
     .abilitymenu        { border:0px; border-collapse: collapse; }
     .abilitymenu tr     { padding: 2px; padding-left: 5px; background-color: #ECE9E6; }
     .abilitymenu td     { text-align: right; padding: 2px; padding-left: 5px; border: 1px solid #D6CBC2; }
     td.c1           { text-align: left;}
     .bold td        { font-weight:bold;}
-    #plantrow       { border: 1px solid #A2A09F; font-weight: bold; padding: 2px; padding-left: 5px; background-image: url(images/buttongreen_bg.jpg); }
+    #plantrow       { border: 1px solid #A2A09F; font-weight: bold; padding: 2px; padding-left: 5px; background-image: url(../images/buttongreen_bg.jpg); }
     .friendlist         { border-collapse: collapse; }
     .friendlist tr      { background-color: #ECE9E6; }
     .friendlist td      { padding: 3px; border-bottom: 1px solid #D6CBC2; }
@@ -444,11 +444,11 @@ z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 1
 
 
 /* Einstellungen */
-    a[href*="profil.php?action=skip"]:before    { content: url(images/check.png); padding-right: 2px; }
+    a[href*="profil.php?action=skip"]:before    { content: url(../images/check.png); padding-right: 2px; }
     a[href*="profil.php?action=skip"]:hover     { color: #D20000 !important; }
-    a[href*="profil.php?action=show"]:before    { content: url(images/cross.png); padding-right: 2px; }
+    a[href*="profil.php?action=show"]:before    { content: url(../images/cross.png); padding-right: 2px; }
     a[href*="profil.php?action=show"]:hover     { color: #008800 !important; }
-    a[href*="profil.php?action=enable"]:before  { content: url(images/cross.png); padding-right: 2px; }
+    a[href*="profil.php?action=enable"]:before  { content: url(../images/cross.png); padding-right: 2px; }
     a[href*="profil.php?action=enable"]:hover   { color: #008800 !important; }
     form > input[name="ownstyle"]           { width: 100%; }
 
@@ -513,7 +513,7 @@ z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 1
     #fastspell                  {margin: -10px 5px 0px 0px; }
     #fastspell td                   {padding: 0px 5px 0px 0px;}
 
-    .frameitembg                    { margin: 10px; margin-top: 1px; background-color: #DCDCDC; background-image: url(images/itembg.jpg); }
+    .frameitembg                    { margin: 10px; margin-top: 1px; background-color: #DCDCDC; background-image: url(../images/itembg.jpg); }
     .frameitembg img[src$="item_divider.gif"]   {margin-top: -5px;height: 9px;}
 
 /*Bilder verkleinern (Vote/Brief/Sieg/Niederlage) */
