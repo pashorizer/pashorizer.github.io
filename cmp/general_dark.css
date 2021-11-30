@@ -82,7 +82,7 @@
 }
 
 /* goldadern, aufträge, evt. matched der auch was anderes.. test (yolo) */
-.listusersrow a[href*="npc_active"]::after, a[href*="getmission"]::after, a[href*="finish"]::after {
+.listusersrow a[href*="npc_active"]::after, a[href*="getmission"]::after, a[href*="finish"]::after, a[href="?"]::after {
     content: "\2692";
     font-size: 30px;
     position: absolute;
