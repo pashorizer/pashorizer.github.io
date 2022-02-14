@@ -125,7 +125,7 @@
 }
 
 /* Dungeons, evt. matched der auch was anderes.. test (yolo) */
-.areadescription a[href*="unten"]::after, .areadescription a[href*="go"]::after, a[href*="oben"]::after, a[href*="casino2"]::after, a[href*="betreten"]::after, a[href*="rausgehen"]::after, a[href*="abgeben"]::after {
+.areadescription a[href*="unten"]::after, .areadescription a[href$="go"]::after, a[href*="oben"]::after, a[href*="casino2"]::after, a[href*="betreten"]::after, a[href*="rausgehen"]::after, a[href*="abgeben"]::after {
     content: "\2616";
     font-size: 30px;
     position: absolute;
