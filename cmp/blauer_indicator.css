@@ -21,9 +21,9 @@
 	.frameitembg a[title="Anatubien - Der Wald der Akademie"]:after { content: "Ana \A 85 102"; }
 	.frameitembg a[title="Bank aller Wesen"]:after { content: "Baw \A 92 105"; color: lime}
 	.frameitembg a[title="Reikan - Die Trockenebene"]:after { content: "Reikan \A 97 108"; }
-	.frameitembg a[title="Das Tal der Ruinen"]:after { content: "TdR \A 93 96"; }
+	.frameitembg a[title="Das Tal der Ruinen"]:after { content: "TdR \A 93 96"; color: #4effff}
 	.frameitembg a[title="Das vergessene Tal"]:after { content: "Tal \A 81 94"; }
-	.frameitembg a[title="Mentoran - Die Oase"]:after { content: "Mento \A 99 115"; }
+	.frameitembg a[title="Mentoran - Die Oase"]:after { content: "Mento \A 99 115"; color: #4effff }
 	.frameitembg a[title="Narubia - Die Nebelbank"]:after { content: "Narubia \A 501 51"; }
 	.frameitembg a[title="Nawor - Die Kakteenebene"]:after { content: "Nawor \A 103 110"; }
 	.frameitembg a[title="Buran - Der Westbereich"]:after { content: "Buran \A 80 87"; }
@@ -31,7 +31,7 @@
 	.frameitembg a[title="Hewien - Kantige Felsen"]:after { content: "Hewien \A 92 90"; }
 	.frameitembg a[title="Orewu - Der Salzsee"]:after { content: "Orewu \A 108 114"; }
 	.frameitembg a[title="Das Casino von Ferdolien"]:after { content: "Casino \A 100 94"; color: lime }
-	.frameitembg a[title="Kanobien - Der Wasserfall"]:after { content: "Kano \A 75 99"; }
+	.frameitembg a[title="Kanobien - Der Wasserfall"]:after { content: "Kano \A 75 99"; color: #4effff}
 	.frameitembg a[title="Terasi - Der Fluss"]:after { content: "Terasi \A 66 111"; }
 	.frameitembg a[title="Lodradon - Der organische Turm"]:after { content: "Lodra \A 114 76"; }
 	.frameitembg a[title="Terasi - Der rauschende Fluss"]:after { content: "Terasi \A 73 126"; }
