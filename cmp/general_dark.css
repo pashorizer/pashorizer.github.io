@@ -20,6 +20,7 @@
     --chat_weather: #FFB400;
     --color_healthok: #73ff73;
     --npc_highlight: #b4d273;
+    --blauer_indicator: #dd613b;
 }
 
 .framebannerbg td[align="center"] { text-align: right; padding-bottom: 10px; padding-right: 10px; }
@@ -423,7 +424,7 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
     p.worldsay tr[bgcolor="#99EE99"] td {color: black; background-color: #52a252}
     p.worldsay tr[bgcolor="#C1CEF9"] td {color: black; background-color: #898b91}
     p.worldsay tr[bgcolor="#EEEE99"] td {color: black; background-color: #e14d4d}
-    
+    p.worldsay tr[bgcolor="#FFAEA1"] td {color: black; background-color: #898b91}
 
 
 /* Wetter */
@@ -593,6 +594,10 @@ z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 1
     display:inline-block;
     padding-right:3px
 }
+
+/*black uk fields*/
+td[style*="/map/black.jpg"] a:not(.nocango),td[style*="/map/u/Einzelbilder/002.jpg"] a,td[style*="/map/ixi19.jpg"] a{z-index: 99;width:50px;height:50px;display:block;background:radial-gradient(circle,  #FFFF00,transparent, transparent);;}
+
 /* von Teepflanze geklaut */
 
 /*gigantische */

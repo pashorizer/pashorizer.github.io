@@ -1,6 +1,7 @@
 /* GLOBAL VARS */
 :root {
     --rbgcolor: #FFFFFF;
+    --blauer_indicator: #FF4000;
 }
 
 .framebannerbg { background: #585858 url(../images/bannerbg2.jpg) no-repeat top left; }
