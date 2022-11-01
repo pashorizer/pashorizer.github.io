@@ -631,6 +631,14 @@ border: 2px inset rgb(53, 53, 53)!important;
 border-top-left-radius: 20px;
 border-bottom-right-radius: 20px;}
 
+/*normale */
+img[src*="plant"] {
+margin-right: .2rem;
+background: #88A269;
+border: 2px inset rgb(53, 53, 53)!important;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;}
+
 /* Waffenzustände*/
 p[title$=" 200%"]:after { content: " (200%)"; font-size: 10px; color: #acabab; }
 p[title$=" 199%"]:after { content: " (199%)"; font-size: 10px; color: #acabab; }
