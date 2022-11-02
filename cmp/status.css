@@ -56,6 +56,7 @@
 #listrow_status span[title^='Rennen']:before {content: "☈ |"; font-weight: bold; font-size: 10px;}
 #listrow_status span[title^='Gewebemeister']:before {content: "⚚ |"; font-weight: bold; font-size: 10px;}
 #listrow_status span[title^='einzigartige NPC Sicht']:before {content: "⚯ |"; font-weight: bold; font-size: 10px;}
+#listrow_status span[title^='rote Würfel']:before {content: "⚄ |"; font-weight: bold; font-size: 10px;}
 
 #listrow_status span[title^='Goldduft']:before {content: "GD"; font-weight: bold; font-size: 10px;}
 #listrow_status span[title^='Trank der Waldpflanzensicht']:before {content: "PS"; font-weight: bold; font-size: 10px; }
