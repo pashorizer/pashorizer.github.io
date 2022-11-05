@@ -1,0 +1,26 @@
+/**
+	My Copy-Paste-Fu is strong in this one. (@FWTools, @Alex, @Baum, @Mordino, @Teepflanze)
+    v1.0
+**/
+
+
+
+@import url("./cmp/status.css");
+@import url("./cmp/ans.css");
+@import url("./cmp/cnr.css");
+@import url("./cmp/smn.css");
+@import url("./cmp/cid.css");
+@import url("./cmp/save.css");
+@import url("./cmp/general_dark_cf.css");
+@import url("./cmp/blauer_indicator.css");
+
+
+
+/* Shopgrafik */
+.framebannerbg:before {
+    top : 0px;
+    float:right;
+    content : url("https://zocker.eu/freewar2/grafik.php") url("https://zocker.eu/freewar2/vvvg.php");
+    opacity : 1;
+    position: absolute;
+}
