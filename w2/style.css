@@ -16,6 +16,6 @@
 .framebannerbg:before {
     top : 0px;
     float:right;
-    content : url("https://zocker.eu/freewar2/grafik.php") url("https://freewar.zocker.eu/xp.php?w=2&s=4&limit=3") url("https://zocker.eu/freewar2/vvvg.php");
+    content : url("https://freewar.zocker.eu/grafik.php") url("https://freewar.zocker.eu/xp.php?w=2&s=4&limit=3") url("https://freewar.zocker.eu/vvvg.php");
     opacity : 1;
 }
