@@ -221,13 +221,11 @@ p.listcaption       { border: 1px solid #A2A09F; font-weight: bold; padding: 1px
 #listrow_defensep:before { content: "V: "; font-weight: bold; padding-left: 0px; }
 #listrow_defensew:after, #listrow_attackw:after, #listrow_ring:after { margin-right: 8px; }
 #listrow_ring:before{content: "F: "; font-weight: bold; padding-left: 0px}
-#listrow_special { background-color: transparent; border: medium none; display: block; overflow: hidden; position: absolute; right: 11px; top: 52px; width: auto; }
-#listrow_special a[href*="special"] { height: 12px; width: 0px; color: transparent;  font-size: 0.001%!important;}
-#listrow_special a[href*="special"]:before { content: "Spezi"; color: #5092df!important; font-size: 12px; }
-#listrow_special a[href*="special"] span {border: 2px solid transparent!important;}
+#listrow_special { background-color: transparent; border: none; overflow: hidden; position: absolute; right: 11px; top: 60px; }
+#listrow_special a#link_special { color: transparent; font-size: 0.001%!important; }
+#listrow_special a#link_special:before { content: "Spezi"; color: #5092df!important; font-size: 12px; }
 #listrow_special a[href="item.php?action=towercontrol"] { height: 12px; width: 0px; color: transparent;  font-size: 0.001%!important;}
 #listrow_special a[href="item.php?action=towercontrol"]:before { content: "Turm"; color: #5092df!important; font-size: 12px; }
-#listrow_special a[href="item.php?action=towercontrol"] span {border: 2px solid transparent!important;}
 
 #toplp {border: 1px dotted var(--border) !important; background-color: var(--mainheader_bg) !important;}
 #fullenergydisp {background: var(--mainheader_bg) !important; border: 1px solid var(--border) !important; background-image:none !important;}
@@ -554,8 +552,8 @@ z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 1
     p.listitemrow b.itemname:hover {color: var(--linkcolor);}
 
     #fastspell1, #fastspell2, #fastspell3, #fastspell4, #fastspell5, #fastspell6, #fastspell7, #fastspell8, #fastspell9 { margin-top: -1px;}
-    #fastspell                  {margin: -10px 5px 0px 0px; }
-    #fastspell td                   {padding: 0px 5px 0px 0px;}
+    #fastspell                  { margin: 0px 5px 0px 0px; }
+    #fastspell td                   { padding: 0px 5px 0px 0px; white-space: nowrap; }
 
     
 

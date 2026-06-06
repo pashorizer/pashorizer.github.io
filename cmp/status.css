@@ -63,6 +63,8 @@
 #listrow_status span[title^='Trank der Waldpflanzensicht']:before {content: "PS"; font-weight: bold; font-size: 10px; }
 #listrow_status span[title^='Überladen']:before {content: "ÜL"; font-weight: bold; font-size: 10px; }
 
+#listrow_status span[title^='Phasenbeherrschung']:before {content: "PBH"; font-weight: bold; font-size: 10px; }
+
 /* Phasenzeug */
 #listrow_status span[title*='Phasen'] {color: lightblue; background: #000624; }
 
