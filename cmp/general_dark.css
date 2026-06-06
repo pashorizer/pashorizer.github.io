@@ -850,3 +850,5 @@ p[title$=" 3%"]:after { content: " (REPAIR)";  animation: opacity 2s ease-in-out
     opacity: 1;
   }
 }
+
+.framemapbg td[id^="map"] a { width: inherit !important; height: inherit !important; }
