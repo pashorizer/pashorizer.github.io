@@ -221,7 +221,8 @@ p.listcaption       { border: 1px solid #A2A09F; font-weight: bold; padding: 1px
 #listrow_defensep:before { content: "V: "; font-weight: bold; padding-left: 0px; }
 #listrow_defensew:after, #listrow_attackw:after, #listrow_ring:after { margin-right: 8px; }
 #listrow_ring:before{content: "F: "; font-weight: bold; padding-left: 0px}
-#listrow_special { background-color: transparent; border: none; overflow: hidden; position: absolute; right: 11px; top: 60px; }
+#listrow_special { background-color: transparent; border: none; overflow: hidden; position: absolute; right: 5px; top: 60px; }
+#listrow_group ~ #listrow_special { top: 77px; }
 #listrow_special a#link_special { color: transparent; font-size: 0.001%!important; }
 #listrow_special a#link_special:before { content: "Spezi"; color: #5092df!important; font-size: 12px; }
 #listrow_special a[href="item.php?action=towercontrol"] { height: 12px; width: 0px; color: transparent;  font-size: 0.001%!important;}
