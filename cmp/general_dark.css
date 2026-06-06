@@ -392,13 +392,23 @@ a[href="item.php?action=lastfastspell"] {font-size: 12px}
     width: 80px;
 }
 
-
+.customfilters tr td {
+    background-color: var(--area_bg);
+    border: 1px solid var(--border);
+}
 
 /* banner stuff */
     .bannerad       { border: 1px solid #C85424; }
 
+    .chattextinspiration[data-inspiration]::before {
+        content: attr(data-inspiration) ': ';
+        color: aqua;
+    }
+
 /* text classes */
     .chattextsynergieinspiration { font-style: italic !important; }
+    .synergieeffekt { color: var(--chat_group) !important; }
+    .inspirationeffect { color: var(--global_font) !important; }
     .chattextinspiration    { font-style: normal; color: #848484 !important }
     .chattextinspiration > b { color: var(--chat_group)}
     .chattime {color: var(--global_font) !important;}
