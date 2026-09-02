@@ -469,6 +469,7 @@ z-index: 2; width: 50px; position: absolute; left: 0px; top: 0px; line-height: 1
 
 /* Rassen der Clanmitglieder im Clanmenu */
 
+    .frameitembg *[title*="Quarren"]:after   { display: block; content:" ("attr(title)")"; color:#000000; }
     .frameitembg *[title*="Mensch"]:after   { display: block; content:" ("attr(title)")"; color:#000000; }
     .frameitembg *[title*="Onlo"]:after     { display: block; content:" ("attr(title)")"; color:#000000; }
     .frameitembg *[title*="Natla"]:after    { display: block; content:" ("attr(title)")"; color:#000000; }
